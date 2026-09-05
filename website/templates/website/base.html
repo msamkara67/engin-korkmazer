@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Doç. Dr. Engin Korkmazer{% endblock %}</title>
+
+    <meta name="description" content="{% block meta_description %}Doç. Dr. Engin Korkmazer - Kadın Hastalıkları ve Doğum Uzmanı{% endblock %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="{% url 'website:home' %}" class="brand">
+            <span class="brand-title">Doç. Dr. Engin Korkmazer</span>
+            <span class="brand-subtitle">Kadın Hastalıkları ve Doğum Uzmanı</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="{% url 'website:home' %}">Ana Sayfa</a>
+            <a href="#">Hakkımda</a>
+            <a href="#">Uzmanlık Alanları</a>
+            <a href="#">Hasta Bilgilendirme</a>
+            <a href="#">İletişim</a>
+
+            <a href="#" class="appointment-button">
+                Randevu Al
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <div>
+            <strong>Doç. Dr. Engin Korkmazer</strong>
+            <p>Kadın Hastalıkları ve Doğum Uzmanı</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Hakkımda</a>
+            <a href="#">Uzmanlık Alanları</a>
+            <a href="#">İletişim</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © {% now "Y" %} Doç. Dr. Engin Korkmazer
+    </div>
+</footer>
+<script src="{% static 'website/js/main.js' %}"></script>
+</body>
+</html>

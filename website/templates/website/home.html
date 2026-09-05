@@ -1,0 +1,345 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+
+{% block title %}
+Doç. Dr. Engin Korkmazer | Kadın Hastalıkları ve Doğum Uzmanı
+{% endblock %}
+
+{% block meta_description %}
+Doç. Dr. Engin Korkmazer'in kadın hastalıkları, doğum, laparoskopik cerrahi, ürojinekoloji ve riskli gebelik alanlarındaki hizmetleri hakkında bilgi alın.
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <span class="hero-eyebrow">
+                Kadın Hastalıkları ve Doğum Uzmanı
+            </span>
+
+            <h1>
+                Doç. Dr.<br>
+                <span>Engin Korkmazer</span>
+            </h1>
+
+            <p class="hero-description">
+                Kadın sağlığı, ileri laparoskopik cerrahi,
+                ürojinekoloji ve yüksek riskli gebelik alanlarında
+                güncel tıbbi yaklaşımlar.
+            </p>
+
+            <div class="hero-specialties">
+                <span>İleri Laparoskopik Cerrahi</span>
+                <span>Ürojinekoloji</span>
+                <span>Riskli Gebelik</span>
+            </div>
+
+            <div class="hero-actions">
+
+                <a href="#" class="button button-primary">
+                    Randevu Al
+                </a>
+
+                <a href="#" class="button button-secondary">
+                    İletişim
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image-wrapper">
+
+            <div class="hero-image">
+                <img
+                    src="{% static 'website/images/engin-korkmazer.jpg' %}"
+                    alt="Doç. Dr. Engin Korkmazer"
+                >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="specialties-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Uzmanlık Alanları</span>
+            <h2>Kadın sağlığında kapsamlı yaklaşım</h2>
+            <p>
+                Tanıdan cerrahi tedaviye ve gebelik takibine kadar
+                farklı ihtiyaçlara yönelik uzmanlık alanları.
+            </p>
+        </div>
+
+
+        <div class="specialty-grid">
+
+            <a href="#" class="specialty-card">
+                <span class="card-number">01</span>
+                <h3>Laparoskopik Cerrahi</h3>
+                <p>
+                    Minimal invaziv yöntemlerle jinekolojik
+                    hastalıkların cerrahi tedavisi.
+                </p>
+                <span class="card-link">Detaylı Bilgi →</span>
+            </a>
+
+
+            <a href="#" class="specialty-card">
+                <span class="card-number">02</span>
+                <h3>Jinekolojik Onkoloji</h3>
+                <p>
+                    Jinekolojik kanserlerin değerlendirilmesi,
+                    tanısı ve cerrahi yönetimi.
+                </p>
+                <span class="card-link">Detaylı Bilgi →</span>
+            </a>
+
+
+            <a href="#" class="specialty-card">
+                <span class="card-number">03</span>
+                <h3>Ürojinekoloji</h3>
+                <p>
+                    İdrar kaçırma ve pelvik organ sarkmalarına
+                    yönelik değerlendirme ve tedavi.
+                </p>
+                <span class="card-link">Detaylı Bilgi →</span>
+            </a>
+
+
+            <a href="#" class="specialty-card">
+                <span class="card-number">04</span>
+                <h3>Riskli Gebelik</h3>
+                <p>
+                    Yüksek risk taşıyan gebeliklerin yakın
+                    izlem ve değerlendirilmesi.
+                </p>
+                <span class="card-link">Detaylı Bilgi →</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="videos-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Doktor Anlatıyor</span>
+            <h2>Kısa videolarla sağlık konuları</h2>
+            <p>
+                Doç. Dr. Engin Korkmazer'in kadın sağlığı,
+                cerrahi ve gebelik konularındaki kısa anlatımları.
+            </p>
+        </div>
+
+        <div class="video-showcase">
+
+            <!-- SOL: BÜYÜK AKTİF VIDEO -->
+            <div class="video-main">
+
+                <div
+                    class="video-main-player"
+                    id="main-video"
+                    data-video-id="AS64zxLgn40"
+                >
+
+                    <button
+                        class="main-video-cover"
+                        type="button"
+                        id="main-video-cover"
+                    >
+
+                        <img
+                            id="main-video-image"
+                            src="https://img.youtube.com/vi/AS64zxLgn40/hqdefault.jpg"
+                            alt="Doç. Dr. Engin Korkmazer video"
+                        >
+
+                        <span class="video-play-button">
+                            ▶
+                        </span>
+
+                        <div class="video-overlay">
+
+                            <span id="main-video-category">
+                                DOKTOR ANLATIYOR
+                            </span>
+
+                            <strong id="main-video-title">
+                                Doç. Dr. Engin Korkmazer
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAG: 4 KÜÇÜK VIDEO -->
+            <div class="video-side">
+
+                <button
+                    class="side-video-card active"
+                    type="button"
+                    data-video-id="AS64zxLgn40"
+                    data-category="LAPAROSKOPİK CERRAHİ"
+                    data-title="Laparoskopik cerrahi uygulamaları"
+                >
+
+                    <img
+                        src="https://img.youtube.com/vi/AS64zxLgn40/hqdefault.jpg"
+                        alt=""
+                    >
+
+                    <div class="side-video-content">
+
+                        <span>
+                            LAPAROSKOPİK CERRAHİ
+                        </span>
+
+                        <strong>
+                            Laparoskopik cerrahi uygulamaları
+                        </strong>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="side-video-card"
+                    type="button"
+                    data-video-id="b0lQO8aWqHU"
+                    data-category="KADIN SAĞLIĞI"
+                    data-title="Kadın sağlığında güncel yaklaşımlar"
+                >
+
+                    <img
+                        src="https://img.youtube.com/vi/b0lQO8aWqHU/hqdefault.jpg"
+                        alt=""
+                    >
+
+                    <div class="side-video-content">
+
+                        <span>
+                            KADIN SAĞLIĞI
+                        </span>
+
+                        <strong>
+                            Kadın sağlığında güncel yaklaşımlar
+                        </strong>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="side-video-card"
+                    type="button"
+                    data-video-id="7Yti_V0w7M4"
+                    data-category="JİNEKOLOJİ"
+                    data-title="Jinekolojik hastalıklarda değerlendirme"
+                >
+
+                    <img
+                        src="https://img.youtube.com/vi/7Yti_V0w7M4/hqdefault.jpg"
+                        alt=""
+                    >
+
+                    <div class="side-video-content">
+
+                        <span>
+                            JİNEKOLOJİ
+                        </span>
+
+                        <strong>
+                            Jinekolojik hastalıklarda değerlendirme
+                        </strong>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="side-video-card"
+                    type="button"
+                    data-video-id="1kChxDgmKq8"
+                    data-category="GEBELİK"
+                    data-title="Gebelik sürecinde dikkat edilmesi gerekenler"
+                >
+
+                    <img
+                        src="https://img.youtube.com/vi/1kChxDgmKq8/hqdefault.jpg"
+                        alt=""
+                    >
+
+                    <div class="side-video-content">
+
+                        <span>
+                            GEBELİK
+                        </span>
+
+                        <strong>
+                            Gebelik sürecinde dikkat edilmesi gerekenler
+                        </strong>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ALT SAYFA NAVIGASYONU -->
+
+        <div class="video-pagination">
+
+            <button
+                type="button"
+                id="video-prev-group"
+                aria-label="Önceki videolar"
+            >
+                ←
+            </button>
+
+            <span id="video-group-number">
+                1 / 3
+            </span>
+
+            <button
+                type="button"
+                id="video-next-group"
+                aria-label="Sonraki videolar"
+            >
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
