@@ -1,0 +1,149 @@
+{% extends "website/base.html" %}
+
+{% block title %}Miyom Tedavisi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Bursa'da miyom tanı ve tedavisi hakkında bilgi alın. Miyom belirtileri, takip seçenekleri, miyom ameliyatı ve laparoskopik cerrahi yöntemleri hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · JİNEKOLOJİ</span>
+
+        <h1>Miyomlar ve Tedavi Seçenekleri</h1>
+
+        <p>
+            Miyomlar, rahmin kas dokusundan gelişen ve kadınlarda sık görülen
+            iyi huylu oluşumlardır. Boyutları, yerleşimleri ve oluşturdukları
+            şikâyetler kişiden kişiye farklılık gösterebilir.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container">
+
+        <div class="article-layout">
+
+            <article class="article-content">
+
+                <h2>Miyom nedir?</h2>
+
+                <p>
+                    Miyomlar rahmin kas tabakasından kaynaklanan iyi huylu
+                    oluşumlardır. Tek bir miyom bulunabileceği gibi rahmin
+                    farklı bölgelerinde birden fazla miyom da görülebilir.
+                </p>
+
+                <p>
+                    Bazı miyomlar herhangi bir şikâyete neden olmazken,
+                    bazıları büyüklükleri veya yerleşimleri nedeniyle
+                    hastanın günlük yaşamını etkileyebilir.
+                </p>
+
+
+                <h2>Belirtileri nelerdir?</h2>
+
+                <p>Miyomlarda görülebilecek başlıca yakınmalar şunlardır:</p>
+
+                <ul>
+                    <li>Yoğun veya uzun süren adet kanamaları</li>
+                    <li>Adet dönemlerinde ağrı</li>
+                    <li>Kasık ve pelvik bölgede ağrı veya baskı hissi</li>
+                    <li>Sık idrara çıkma</li>
+                    <li>Karında şişkinlik veya dolgunluk hissi</li>
+                    <li>Gebelik elde etmekte güçlük</li>
+                </ul>
+
+
+                <h2>Tanı nasıl konulur?</h2>
+
+                <p>
+                    Miyomların değerlendirilmesinde jinekolojik muayene ve
+                    ultrasonografi temel yöntemlerdir. Gerekli durumlarda
+                    miyomların sayısı, büyüklüğü ve yerleşiminin daha ayrıntılı
+                    değerlendirilmesi için ileri görüntüleme yöntemlerinden
+                    yararlanılabilir.
+                </p>
+
+
+                <h2>Her miyom tedavi edilmeli midir?</h2>
+
+                <p>
+                    Her miyom için cerrahi tedavi gerekli değildir. Şikâyete
+                    neden olmayan ve küçük boyutlu miyomlar belirli aralıklarla
+                    takip edilebilir.
+                </p>
+
+                <p>
+                    Tedavi kararı; hastanın yaşı, şikâyetleri, miyomların
+                    büyüklüğü ve yerleşimi ile gelecekteki gebelik planı
+                    birlikte değerlendirilerek verilir.
+                </p>
+
+
+                <h2>Tedavi seçenekleri</h2>
+
+                <p>
+                    Hastanın klinik durumuna göre takip, ilaç tedavileri veya
+                    cerrahi seçenekler değerlendirilebilir.
+                </p>
+
+                <p>
+                    Cerrahi gereken hastalarda yalnızca miyomların çıkarılması
+                    (miyomektomi) veya uygun hastalarda rahmin alınması
+                    (histerektomi) gibi farklı yöntemler uygulanabilir.
+                </p>
+
+
+                <h2>Laparoskopik cerrahi</h2>
+
+                <p>
+                    Uygun hastalarda miyom ameliyatları laparoskopik yani
+                    kapalı cerrahi yöntemlerle gerçekleştirilebilir.
+                    Uygulanacak yönteme miyomların büyüklüğü, sayısı,
+                    yerleşimi ve hastanın klinik özellikleri değerlendirilerek
+                    karar verilir.
+                </p>
+
+
+                <h3>Bilgilendirme Notu</h3>
+
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Tanı ve tedavi için kişisel tıbbi değerlendirme gereklidir.
+                </p>
+
+            </article>
+
+
+            <aside class="article-sidebar">
+
+                <div class="article-appointment-card">
+                    <span class="section-kicker">RANDEVU</span>
+
+                    <h3>Değerlendirme için randevu</h3>
+
+                    <p>
+                        Şikâyetleriniz ve tedavi seçenekleriniz hakkında
+                        kişisel değerlendirme için randevu oluşturabilirsiniz.
+                    </p>
+
+                    <a href="{% url 'website:contact' %}">
+                        Randevu Al
+                    </a>
+                </div>
+
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">
+                    ← Tüm Bilgilendirme Yazıları
+                </a>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

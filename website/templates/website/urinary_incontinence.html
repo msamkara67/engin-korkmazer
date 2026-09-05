@@ -1,0 +1,169 @@
+{% extends "website/base.html" %}
+
+{% block title %}İdrar Kaçırma Tedavisi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Bursa'da kadınlarda idrar kaçırma nedenleri, türleri, tanı ve tedavi seçenekleri hakkında bilgi alın. Ürojinekolojik değerlendirme ve tedavi yaklaşımları.{% endblock %}
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · ÜROJİNEKOLOJİ</span>
+
+        <h1>İdrar Kaçırma</h1>
+
+        <p>
+            Kadınlarda idrar kaçırma sık görülen ve yaşam kalitesini önemli
+            ölçüde etkileyebilen bir sağlık problemidir. Doğru değerlendirme
+            ile idrar kaçırmanın türü belirlenerek uygun tedavi planlanabilir.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container">
+
+        <div class="article-layout">
+
+            <article class="article-content">
+
+                <h2>İdrar kaçırma nedir?</h2>
+
+                <p>
+                    İdrar kaçırma, kişinin kontrolü dışında istemsiz olarak
+                    idrar kaybetmesidir. Kadınlarda gebelik, doğum, yaş,
+                    menopoz ve pelvik taban yapısındaki değişiklikler gibi
+                    birçok faktörle ilişkili olabilir.
+                </p>
+
+                <p>
+                    İdrar kaçırmanın farklı türleri bulunduğu için tedaviden
+                    önce problemin hangi mekanizmaya bağlı olduğunun
+                    değerlendirilmesi önemlidir.
+                </p>
+
+
+                <h2>İdrar kaçırma türleri nelerdir?</h2>
+
+                <p>En sık görülen idrar kaçırma türleri şunlardır:</p>
+
+                <ul>
+                    <li>
+                        <strong>Stres tipi idrar kaçırma:</strong>
+                        Öksürme, hapşırma, gülme veya egzersiz sırasında
+                        idrar kaçırılması.
+                    </li>
+                    <li>
+                        <strong>Sıkışma tipi idrar kaçırma:</strong>
+                        Ani ve güçlü idrar yapma ihtiyacıyla birlikte
+                        idrar kaçırılması.
+                    </li>
+                    <li>
+                        <strong>Karışık tip idrar kaçırma:</strong>
+                        Stres ve sıkışma tipi belirtilerin birlikte görülmesi.
+                    </li>
+                </ul>
+
+
+                <h2>Nedenleri nelerdir?</h2>
+
+                <p>
+                    İdrar kaçırmaya yol açabilecek faktörler kişiden kişiye
+                    değişebilir. Başlıca risk faktörleri arasında şunlar
+                    bulunabilir:
+                </p>
+
+                <ul>
+                    <li>Gebelik ve doğum</li>
+                    <li>Pelvik taban kaslarında zayıflama</li>
+                    <li>Menopoz sonrası değişiklikler</li>
+                    <li>Fazla kilo</li>
+                    <li>Yaşla birlikte oluşan değişiklikler</li>
+                    <li>Pelvik organ sarkmaları</li>
+                </ul>
+
+
+                <h2>Tanı nasıl konulur?</h2>
+
+                <p>
+                    Değerlendirme hastanın şikâyetlerinin ayrıntılı olarak
+                    dinlenmesi ve jinekolojik muayene ile başlar. İdrar
+                    kaçırmanın türünü ve şiddetini belirlemek amacıyla gerekli
+                    durumlarda ek testlerden yararlanılabilir.
+                </p>
+
+                <p>
+                    Tedavi planının doğru oluşturulabilmesi için idrar
+                    kaçırmanın hangi durumlarda meydana geldiğinin
+                    belirlenmesi önemlidir.
+                </p>
+
+
+                <h2>Tedavi seçenekleri</h2>
+
+                <p>
+                    Tedavi; idrar kaçırmanın türüne, şiddetine, hastanın yaşına
+                    ve günlük yaşam üzerindeki etkisine göre planlanır.
+                </p>
+
+                <p>
+                    Yaşam tarzı düzenlemeleri, pelvik taban egzersizleri,
+                    ilaç tedavileri veya uygun hastalarda cerrahi tedavi
+                    seçenekleri değerlendirilebilir.
+                </p>
+
+
+                <h2>Cerrahi tedavi</h2>
+
+                <p>
+                    Özellikle stres tipi idrar kaçırması bulunan ve cerrahi
+                    tedavi için uygun olan hastalarda farklı cerrahi yöntemler
+                    uygulanabilir.
+                </p>
+
+                <p>
+                    Hangi yöntemin uygun olduğuna hastanın muayene bulguları,
+                    şikâyetleri ve eşlik eden diğer pelvik taban problemleri
+                    birlikte değerlendirilerek karar verilir.
+                </p>
+
+
+                <h3>Bilgilendirme Notu</h3>
+
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Tanı ve tedavi için kişisel tıbbi değerlendirme gereklidir.
+                </p>
+
+            </article>
+
+
+            <aside class="article-sidebar">
+
+                <div class="article-appointment-card">
+                    <span class="section-kicker">RANDEVU</span>
+
+                    <h3>Değerlendirme için randevu</h3>
+
+                    <p>
+                        Şikâyetleriniz ve tedavi seçenekleriniz hakkında
+                        kişisel değerlendirme için randevu oluşturabilirsiniz.
+                    </p>
+
+                    <a href="{% url 'website:contact' %}">
+                        Randevu Al
+                    </a>
+                </div>
+
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">
+                    ← Tüm Bilgilendirme Yazıları
+                </a>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

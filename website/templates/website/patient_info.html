@@ -1,0 +1,112 @@
+{% extends "website/base.html" %}
+
+{% block title %}Hasta Bilgilendirme | Kadın Sağlığı Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Kadın sağlığı, gebelik, jinekolojik hastalıklar ve cerrahi tedaviler hakkında bilgilendirici içeriklere ulaşın. Doç. Dr. Engin Korkmazer, Bursa.{% endblock %}
+
+{% block content %}
+
+<section class="patient-info-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME</span>
+
+        <h1>Doğru Bilgi,<br>Daha Güvenli Kararlar</h1>
+
+        <p>
+            Kadın sağlığı, jinekolojik hastalıklar, gebelik ve cerrahi tedaviler
+            hakkında sık merak edilen konulara yönelik bilgilendirici içerikler.
+        </p>
+    </div>
+</section>
+
+
+<section class="patient-info-page">
+    <div class="container">
+
+        <div class="patient-info-grid">
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>Endometriozis Nedir?</h2>
+
+                <p>
+                    Endometriozisin belirtileri, tanısı ve tedavi seçenekleri
+                    hakkında temel bilgiler.
+                </p>
+
+                <a href="{% url 'website:endometriosis' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">LAPAROSKOPİK CERRAHİ</span>
+                <h2>Laparoskopik Histerektomi</h2>
+
+                <p>
+                    Rahmin kapalı cerrahi yöntemle alınması, iyileşme süreci
+                    ve ameliyat sonrası dönem.
+                </p>
+
+                <a href="{% url 'website:laparoscopic_hysterectomy' %}">Devamını Oku →</a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>Miyomlar ve Tedavi Seçenekleri</h2>
+
+                <p>
+                    Miyomların belirtileri, takip süreci ve hangi durumlarda
+                    cerrahi tedavi gerekebileceği.
+                </p>
+
+                <a href="{% url 'website:fibroids' %}">Devamını Oku →</a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">ÜROJİNEKOLOJİ</span>
+                <h2>İdrar Kaçırma</h2>
+
+                <p>
+                    Kadınlarda idrar kaçırma nedenleri, değerlendirme yöntemleri
+                    ve güncel tedavi seçenekleri.
+                </p>
+
+                <a href="{% url 'website:urinary_incontinence' %}">Devamını Oku →</a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">GEBELİK</span>
+                <h2>Riskli Gebelik Nedir?</h2>
+
+                <p>
+                    Hangi gebeliklerin yüksek riskli kabul edildiği ve takip
+                    sürecinde nelere dikkat edildiği.
+                </p>
+
+                <a href="{% url 'website:high_risk_pregnancy' %}">Devamını Oku →</a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>Yumurtalık Kistleri</h2>
+
+                <p>
+                    Yumurtalık kistlerinin türleri, takip gereksinimi ve
+                    cerrahi tedavi gereken durumlar.
+                </p>
+
+                <a href="{% url 'website:ovarian_cysts' %}">Devamını Oku →</a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

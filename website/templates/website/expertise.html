@@ -1,0 +1,136 @@
+{% extends "website/base.html" %}
+
+{% block title %}Kadın Doğum Uzmanlık Alanları Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Doç. Dr. Engin Korkmazer'in Bursa'da ileri laparoskopik cerrahi, jinekolojik onkoloji, ürojinekoloji ve riskli gebelik alanlarındaki uzmanlık ve hizmetleri hakkında bilgi alın.{% endblock %}
+
+{% block content %}
+
+<section class="expertise-hero">
+    <div class="container">
+        <span class="section-kicker">UZMANLIK ALANLARI</span>
+        <h1>Kadın Sağlığında<br>Uzmanlık ve Deneyim</h1>
+        <p>
+            Tanıdan tedaviye, hastaya özel değerlendirme ve güncel tıbbi
+            yaklaşımlarla kadın sağlığının farklı alanlarında kapsamlı hizmet.
+        </p>
+    </div>
+</section>
+
+
+<section class="expertise-page">
+    <div class="container">
+
+        <div class="expertise-page-grid">
+
+            <article class="expertise-detail-card">
+                
+
+                <h2>İleri Laparoskopik Cerrahi</h2>
+
+                <p>
+                    Minimal invaziv cerrahi teknikleriyle birçok jinekolojik
+                    hastalığın daha küçük kesilerle cerrahi tedavisi
+                    gerçekleştirilebilmektedir.
+                </p>
+
+                <ul>
+                    <li>Laparoskopik histerektomi</li>
+                    <li>Miyom cerrahisi</li>
+                    <li>Yumurtalık kistleri</li>
+                    <li>Endometriozis cerrahisi</li>
+                    <li>İleri düzey laparoskopik girişimler</li>
+                </ul>
+
+                <a href="{% url 'website:advanced_laparoscopic_surgery' %}" class="expertise-link">Detaylı Bilgi →</a>
+            </article>
+
+
+            <article class="expertise-detail-card">
+               
+
+                <h2>Jinekolojik Onkoloji</h2>
+
+                <p>
+                    Jinekolojik kanserlerin değerlendirilmesi, tanısı ve
+                    cerrahi tedavi sürecinde güncel yaklaşımlar doğrultusunda
+                    hasta odaklı planlama.
+                </p>
+
+                <ul>
+                    <li>Rahim kanseri</li>
+                    <li>Yumurtalık kanseri</li>
+                    <li>Rahim ağzı kanseri</li>
+                    <li>Jinekolojik kanser cerrahisi</li>
+                    <li>Cerrahi sonrası takip</li>
+                </ul>
+
+                <a href="{% url 'website:gynecologic_oncology' %}" class="expertise-link">Detaylı Bilgi →</a>
+            </article>
+
+
+            <article class="expertise-detail-card">
+                
+
+                <h2>Ürojinekoloji</h2>
+
+                <p>
+                    Pelvik taban bozuklukları ve kadınlarda idrar kaçırma gibi
+                    yaşam kalitesini etkileyen problemlerin değerlendirilmesi
+                    ve tedavisi.
+                </p>
+
+                <ul>
+                    <li>İdrar kaçırma</li>
+                    <li>Rahim sarkması</li>
+                    <li>Vajinal sarkma</li>
+                    <li>Pelvik taban bozuklukları</li>
+                    <li>Ürojinekolojik cerrahi</li>
+                </ul>
+
+                <a href="{% url 'website:urogynecology' %}" class="expertise-link">Detaylı Bilgi →</a>
+            </article>
+
+
+            <article class="expertise-detail-card">
+                
+
+                <h2>Riskli Gebelik</h2>
+
+                <p>
+                    Anne veya bebeğe ait risk faktörlerinin bulunduğu
+                    gebeliklerde yakın takip, değerlendirme ve gebelik
+                    sürecinin kişiye özel planlanması.
+                </p>
+
+                <ul>
+                    <li>Yüksek riskli gebelik takibi</li>
+                    <li>Fetal değerlendirme</li>
+                    <li>Gebelik komplikasyonları</li>
+                    <li>Fetal ekokardiyografi</li>
+                    <li>Doğum planlaması</li>
+                </ul>
+
+                <a href="{% url 'website:high_risk_pregnancy' %}" class="expertise-link">Detaylı Bilgi →</a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="expertise-cta">
+    <div class="container expertise-cta-inner">
+
+        <div>
+            <span class="section-kicker">RANDEVU</span>
+            <h2>Size özel değerlendirme için<br>randevu oluşturabilirsiniz.</h2>
+        </div>
+
+        <a href="#" class="btn btn-primary">Randevu Al</a>
+
+    </div>
+</section>
+
+{% endblock %}

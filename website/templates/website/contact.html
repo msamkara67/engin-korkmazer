@@ -1,0 +1,101 @@
+{% extends "website/base.html" %}
+
+{% block title %}İletişim ve Randevu | Doç. Dr. Engin Korkmazer | Bursa{% endblock %}
+
+{% block meta_description %}Doç. Dr. Engin Korkmazer'in Bursa Nilüfer'deki muayenehane adresi, ulaşım bilgileri ve online randevu seçeneklerine ulaşın.{% endblock %}
+
+{% block content %}
+
+<section class="contact-hero">
+    <div class="container">
+        <span class="section-kicker">İLETİŞİM</span>
+
+        <h1>İletişim ve<br>Randevu</h1>
+
+        <p>
+            Muayenehane konumu, ulaşım bilgileri ve randevu seçeneklerine
+            aşağıdan ulaşabilirsiniz.
+        </p>
+    </div>
+</section>
+
+
+<section class="contact-page">
+    <div class="container contact-grid">
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <span class="contact-label">MUAYENEHANE</span>
+
+                <h2>Doç. Dr. Engin Korkmazer</h2>
+
+                <p>
+                    Barış Mahallesi, Sümer Sokak No:2<br>
+                    Sinanoğlu Apartmanı, Kat 1<br>
+                    Bağımsız Bölüm No:3<br>
+                    Nilüfer / Bursa
+                </p>
+            </div>
+
+
+            <div class="contact-item">
+                <span class="contact-label">RANDEVU</span>
+
+                <h2>Randevu Oluşturun</h2>
+
+                <p>
+                    Muayene ve değerlendirme için online randevu
+                    oluşturabilirsiniz.
+                </p>
+
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary">
+                    Randevu Al
+                </a>
+            </div>
+
+
+            <div class="contact-item">
+                <span class="contact-label">ULAŞIM</span>
+
+                <h2>Yol Tarifi</h2>
+
+                <p>
+                    Muayenehanenin konumunu harita üzerinden görüntüleyebilir
+                    ve yol tarifi alabilirsiniz.
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Barış+Mahallesi+Sümer+Sokak+No+2+Nilüfer+Bursa"
+                    target="_blank"
+                    rel="noopener"
+                    class="contact-text-link"
+                >
+                    Google Maps'te Aç →
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="contact-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Barış%20Mahallesi%20Sümer%20Sokak%20No%202%20Nilüfer%20Bursa&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Doç. Dr. Engin Korkmazer Muayenehane Konumu">
+            </iframe>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

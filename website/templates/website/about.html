@@ -1,0 +1,154 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block title %}Doç. Dr. Engin Korkmazer Kimdir? | Kadın Doğum Uzmanı Bursa{% endblock %}
+{% block meta_description %}Doç. Dr. Engin Korkmazer'in eğitimi, mesleki deneyimi ve kadın hastalıkları ve doğum, ileri laparoskopik cerrahi, ürojinekoloji ve riskli gebelik alanlarındaki çalışmaları hakkında bilgi alın.{% endblock %}
+{% block content %}
+
+<section class="about-hero">
+    <div class="container about-hero-grid">
+
+        <div class="about-hero-content">
+            <span class="section-kicker">HAKKIMDA</span>
+
+            <h1>Doç. Dr.<br>Engin Korkmazer</h1>
+
+            <p class="about-lead">
+                Kadın Hastalıkları ve Doğum Uzmanı
+            </p>
+
+            <p>
+                Kadın hastalıkları ve doğum alanında; ileri laparoskopik cerrahi,
+                jinekolojik onkoloji, ürojinekoloji ve riskli gebelik alanlarında
+                çalışmalarını sürdürmektedir.
+            </p>
+        </div>
+
+        <div class="about-hero-image">
+            <img src="{% static 'website/images/engin-korkmazer.jpg' %}"
+                 alt="Doç. Dr. Engin Korkmazer">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="about-section">
+    <div class="container about-layout">
+
+        <div class="about-main">
+
+            <span class="section-kicker">ÖZGEÇMİŞ</span>
+            <h2>Mesleki Yolculuk</h2>
+
+            <p>
+                Doç. Dr. Engin Korkmazer, Ankara Üniversitesi Tıp Fakültesi'nde
+                başladığı tıp eğitimini 2005 yılında tamamladı.
+            </p>
+
+            <p>
+                Kadın Hastalıkları ve Doğum uzmanlık eğitimini Eskişehir
+                Osmangazi Üniversitesi Tıp Fakültesi'nde 2006–2011 yılları
+                arasında tamamladı.
+            </p>
+
+            <p>
+                Uzmanlık sonrasında farklı sağlık kuruluşları ve üniversitelerde
+                klinik ve akademik çalışmalar yürüttü. Mesleki çalışmalarında
+                özellikle minimal invaziv cerrahi, jinekolojik onkoloji,
+                ürojinekoloji ve yüksek riskli gebelikler üzerine yoğunlaştı.
+            </p>
+
+
+            <div class="about-divider"></div>
+
+            <span class="section-kicker">ULUSLARARASI DENEYİM</span>
+            <h2>Yurtdışı Eğitim ve Çalışmalar</h2>
+
+            <div class="experience-list">
+
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div>
+                        <h3>University College London</h3>
+                        <p>
+                            Jinekolojik onkoloji alanında klinik gözlem
+                            ve çalışmalar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div>
+                        <h3>King's College Hospital – Londra</h3>
+                        <p>
+                            Riskli gebelikler ve fetal ekokardiyografi
+                            alanında eğitim ve klinik deneyim.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div>
+                        <h3>University of Foggia – İtalya</h3>
+                        <p>
+                            Laparoskopik cerrahi alanında ileri düzey
+                            eğitim ve çalışmalar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div>
+                        <h3>King's College – Londra</h3>
+                        <p>
+                            Ürojinekoloji alanında klinik eğitim
+                            ve gözlem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div>
+                        <h3>World Laparoscopy Hospital</h3>
+                        <p>
+                            İleri laparoskopik ve robotik cerrahi
+                            uygulamaları üzerine eğitim.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <aside class="about-sidebar">
+
+            <div class="about-info-card">
+                <span class="section-kicker">ÇALIŞMA ALANLARI</span>
+
+                <h3>Uzmanlık Alanları</h3>
+
+                <ul>
+                    <li>İleri Laparoskopik Cerrahi</li>
+                    <li>Jinekolojik Onkoloji</li>
+                    <li>Ürojinekoloji</li>
+                    <li>Riskli Gebelik</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">
+                    Uzmanlık Alanlarını İncele
+                </a>
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+{% endblock %}

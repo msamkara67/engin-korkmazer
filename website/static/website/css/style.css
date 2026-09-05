@@ -1038,3 +1038,757 @@ a {
         gap: 12px;
     }
 }
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-hero {
+    padding: 90px 0 70px;
+    background: #f7f6f2;
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-hero-content h1 {
+    margin: 12px 0 18px;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 700;
+    color: #183846;
+}
+
+.about-lead {
+    font-size: 22px;
+    font-weight: 600;
+    color: #284f5f;
+    margin-bottom: 22px;
+}
+
+.about-hero-content p {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #56636a;
+}
+
+.about-hero-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-hero-image img {
+    width: 100%;
+    max-width: 460px;
+    height: 520px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+}
+
+
+.about-section {
+    padding: 95px 0 110px;
+    background: #ffffff;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-main {
+    max-width: 780px;
+}
+
+.about-main h2 {
+    margin: 10px 0 25px;
+    font-size: 36px;
+    color: #183846;
+}
+
+.about-main > p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #59666d;
+    margin-bottom: 18px;
+}
+
+.about-divider {
+    height: 1px;
+    background: #dfe4e5;
+    margin: 55px 0;
+}
+
+
+.experience-list {
+    margin-top: 35px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 18px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.experience-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    bottom: 0;
+    width: 1px;
+    background: #d7dee0;
+}
+
+.experience-marker {
+    width: 11px;
+    height: 11px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background: #204c5c;
+    position: relative;
+    z-index: 2;
+}
+
+.experience-item h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    color: #183846;
+}
+
+.experience-item p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #667279;
+}
+
+
+.about-info-card {
+    position: sticky;
+    top: 110px;
+    padding: 34px;
+    background: #f5f7f6;
+    border: 1px solid #e2e7e8;
+}
+
+.about-info-card h3 {
+    margin: 12px 0 24px;
+    font-size: 26px;
+    color: #183846;
+}
+
+.about-info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.about-info-card li {
+    padding: 13px 0;
+    border-bottom: 1px solid #dce3e4;
+    font-size: 15px;
+    color: #3e515a;
+}
+
+.about-info-card .btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+
+    .about-hero-grid,
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-grid {
+        gap: 40px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 44px;
+    }
+
+    .about-hero-image {
+        justify-content: flex-start;
+    }
+
+    .about-hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-layout {
+        gap: 45px;
+    }
+
+    .about-info-card {
+        position: static;
+    }
+}
+
+/* =========================
+   EXPERTISE PAGE
+========================= */
+
+.expertise-hero {
+    padding: 85px 0 75px;
+    background: #f7f6f2;
+}
+
+.expertise-hero h1 {
+    margin: 12px 0 20px;
+    max-width: 700px;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #183846;
+}
+
+.expertise-hero p {
+    max-width: 720px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b686e;
+}
+
+
+.expertise-page {
+    padding: 90px 0 105px;
+    background: #fff;
+}
+
+.expertise-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.expertise-detail-card {
+    position: relative;
+    padding: 42px;
+    border: 1px solid #dde4e5;
+    background: #fff;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.expertise-detail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(24, 56, 70, 0.08);
+}
+
+.expertise-number {
+    display: block;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #78909a;
+}
+
+.expertise-detail-card h2 {
+    margin: 0 0 18px;
+    font-size: 28px;
+    color: #183846;
+}
+
+.expertise-detail-card p {
+    min-height: 82px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5c696f;
+}
+
+.expertise-detail-card ul {
+    margin: 0 0 30px;
+    padding: 20px 0 20px 20px;
+    border-top: 1px solid #edf0f1;
+    border-bottom: 1px solid #edf0f1;
+}
+
+.expertise-detail-card li {
+    margin: 8px 0;
+    color: #3f525a;
+    font-size: 15px;
+}
+
+.expertise-link {
+    display: inline-block;
+    color: #183846;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.expertise-link:hover {
+    text-decoration: underline;
+}
+
+
+/* CTA */
+
+.expertise-cta {
+    padding: 70px 0;
+    background: #f3f6f5;
+}
+
+.expertise-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.expertise-cta h2 {
+    margin: 10px 0 0;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #183846;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .expertise-hero h1 {
+        font-size: 42px;
+    }
+
+    .expertise-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-detail-card p {
+        min-height: auto;
+    }
+
+    .expertise-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   PATIENT INFORMATION PAGE
+========================= */
+
+.patient-info-hero {
+    padding: 85px 0 75px;
+    background: #f7f6f2;
+}
+
+.patient-info-hero h1 {
+    margin: 12px 0 20px;
+    max-width: 720px;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #183846;
+}
+
+.patient-info-hero p {
+    max-width: 760px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b686e;
+}
+
+
+/* CONTENT */
+
+.patient-info-page {
+    padding: 90px 0 110px;
+    background: #ffffff;
+}
+
+.patient-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.patient-info-card {
+    min-height: 270px;
+    padding: 34px;
+    border: 1px solid #dde4e5;
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.patient-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(24, 56, 70, 0.08);
+}
+
+.patient-info-category {
+    display: block;
+    margin-bottom: 22px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+
+    color: #6d8791;
+}
+
+.patient-info-card h2 {
+    margin: 0 0 18px;
+
+    font-size: 23px;
+    line-height: 1.3;
+
+    color: #183846;
+}
+
+.patient-info-card p {
+    margin: 0 0 28px;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: #5c696f;
+}
+
+.patient-info-card a {
+    margin-top: auto;
+
+    padding-top: 20px;
+    border-top: 1px solid #edf0f1;
+
+    color: #183846;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.patient-info-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .patient-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .patient-info-hero h1 {
+        font-size: 40px;
+    }
+
+    .patient-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-info-card {
+        min-height: auto;
+    }
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-hero {
+    padding: 85px 0 75px;
+    background: #f7f6f2;
+}
+
+.contact-hero h1 {
+    margin: 12px 0 20px;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #183846;
+}
+
+.contact-hero p {
+    max-width: 720px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b686e;
+}
+
+.contact-page {
+    padding: 90px 0 110px;
+    background: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.contact-details {
+    display: grid;
+    gap: 24px;
+}
+
+.contact-item {
+    padding: 30px;
+    border: 1px solid #dde4e5;
+    background: #ffffff;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #6d8791;
+}
+
+.contact-item h2 {
+    margin: 0 0 14px;
+    font-size: 24px;
+    color: #183846;
+}
+
+.contact-item p {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #5c696f;
+}
+
+.contact-text-link {
+    color: #183846;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-text-link:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    min-height: 600px;
+    border: 1px solid #dde4e5;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map,
+    .contact-map iframe {
+        min-height: 420px;
+    }
+
+    .contact-hero h1 {
+        font-size: 42px;
+    }
+}
+
+/* =========================
+   ARTICLE / PATIENT INFO DETAIL
+========================= */
+
+.article-hero {
+    padding: 85px 0 75px;
+    background: #f7f6f2;
+}
+
+.article-hero h1 {
+    margin: 12px 0 20px;
+    max-width: 760px;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #183846;
+}
+
+.article-hero p {
+    max-width: 780px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b686e;
+}
+
+.article-page {
+    padding: 90px 0 110px;
+    background: #fff;
+}
+
+.article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 720px) 300px;
+    gap: 80px;
+    align-items: start;
+}
+
+.article-content h2 {
+    margin: 48px 0 16px;
+    font-size: 28px;
+    line-height: 1.3;
+    color: #183846;
+}
+
+.article-content h2:first-child {
+    margin-top: 0;
+}
+
+.article-content p,
+.article-content li {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #4f5f66;
+}
+
+.article-content p {
+    margin: 0 0 20px;
+}
+
+.article-content ul {
+    margin: 10px 0 28px;
+    padding-left: 24px;
+}
+
+.article-note {
+    margin-top: 55px;
+    padding: 28px 30px;
+    background: #f7f6f2;
+    border-left: 3px solid #183846;
+}
+
+.article-note strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #183846;
+}
+
+.article-note p {
+    margin: 0;
+}
+
+.article-sidebar {
+    position: sticky;
+    top: 110px;
+}
+
+.article-side-card {
+    padding: 30px;
+    border: 1px solid #dde4e5;
+}
+
+.article-side-card h3 {
+    margin: 10px 0 15px;
+    font-size: 22px;
+    line-height: 1.35;
+    color: #183846;
+}
+
+.article-side-card p {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #5c696f;
+}
+
+.article-back-link {
+    display: block;
+    margin-top: 25px;
+    color: #183846;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .article-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .article-sidebar {
+        position: static;
+    }
+
+    .article-hero h1 {
+        font-size: 42px;
+    }
+}
+
+/* HERO BUTTONS */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 145px;
+    padding: 14px 24px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    border: 1px solid #183846;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.hero-actions .btn-primary {
+    background: #183846;
+    color: #ffffff;
+}
+
+.hero-actions .btn-primary:hover {
+    background: #102d38;
+    color: #ffffff;
+}
+
+.hero-actions .btn-secondary {
+    background: transparent;
+    color: #183846;
+}
+
+.hero-actions .btn-secondary:hover {
+    background: #183846;
+    color: #ffffff;
+}
+

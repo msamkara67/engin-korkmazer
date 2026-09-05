@@ -1,0 +1,142 @@
+{% extends "website/base.html" %}
+
+{% block title %}Laparoskopik Histerektomi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Bursa'da laparoskopik histerektomi hakkında bilgi alın. Kapalı rahim ameliyatının uygulanma durumları, ameliyat süreci ve iyileşme dönemi hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · LAPAROSKOPİK CERRAHİ</span>
+
+        <h1>Laparoskopik Histerektomi</h1>
+
+        <p>
+            Laparoskopik histerektomi, rahmin kapalı cerrahi yöntemlerle çıkarıldığı
+            minimal invaziv bir ameliyat yöntemidir.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container article-layout">
+
+        <article class="article-content">
+
+            <h2>Laparoskopik histerektomi nedir?</h2>
+
+            <p>
+                Histerektomi, rahmin cerrahi olarak çıkarılması işlemidir.
+                Laparoskopik yöntemde ameliyat karında açılan küçük kesilerden
+                yerleştirilen kamera ve cerrahi aletler yardımıyla gerçekleştirilir.
+            </p>
+
+            <p>
+                Uygun hastalarda açık cerrahiye kıyasla daha küçük kesiler,
+                daha az ameliyat sonrası ağrı ve günlük yaşama daha hızlı dönüş
+                gibi avantajlar sağlayabilir.
+            </p>
+
+
+            <h2>Hangi durumlarda uygulanabilir?</h2>
+
+            <p>
+                Laparoskopik histerektomi farklı jinekolojik hastalıkların
+                tedavisinde değerlendirilebilir.
+            </p>
+
+            <ul>
+                <li>Miyomlar</li>
+                <li>Anormal rahim kanamaları</li>
+                <li>Adenomyozis</li>
+                <li>Endometriozis</li>
+                <li>Rahim sarkması</li>
+                <li>Uygun hastalarda bazı jinekolojik kanserler</li>
+            </ul>
+
+
+            <h2>Ameliyat nasıl yapılır?</h2>
+
+            <p>
+                Ameliyat genel anestezi altında gerçekleştirilir. Karın bölgesine
+                açılan küçük kesilerden laparoskop ve cerrahi aletler yerleştirilir.
+            </p>
+
+            <p>
+                Rahim çevre dokulardan kontrollü şekilde ayrılır ve operasyonun
+                özelliklerine göre uygun yöntemle vücut dışına çıkarılır.
+            </p>
+
+
+            <h2>İyileşme süreci</h2>
+
+            <p>
+                İyileşme süresi hastanın genel sağlık durumu, yapılan ameliyatın
+                kapsamı ve eşlik eden cerrahi işlemlere göre değişebilir.
+            </p>
+
+            <p>
+                Hastalar genellikle ameliyat sonrası erken dönemde hareket etmeye
+                başlar. Günlük aktivitelere dönüş süreci kişiden kişiye farklılık
+                gösterebilir.
+            </p>
+
+
+            <h2>Her hasta için uygun mudur?</h2>
+
+            <p>
+                Cerrahi yöntemin seçimi hastanın mevcut hastalığı, daha önce
+                geçirdiği ameliyatlar, rahmin büyüklüğü ve diğer klinik bulgular
+                değerlendirilerek yapılır.
+            </p>
+
+            <p>
+                Bu nedenle laparoskopik cerrahi kararı kişisel muayene ve
+                değerlendirme sonrasında verilmelidir.
+            </p>
+
+
+            <div class="article-note">
+                <strong>Bilgilendirme Notu</strong>
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Tanı ve tedavi için kişisel tıbbi değerlendirme gereklidir.
+                </p>
+            </div>
+
+        </article>
+
+
+        <aside class="article-sidebar">
+
+            <div class="article-side-card">
+                <span class="contact-label">RANDEVU</span>
+
+                <h3>Değerlendirme için randevu</h3>
+
+                <p>
+                    Cerrahi seçenekleriniz hakkında kişisel değerlendirme için
+                    randevu oluşturabilirsiniz.
+                </p>
+
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-primary">
+                    Randevu Al
+                </a>
+            </div>
+
+            <a href="{% url 'website:patient_info' %}"
+               class="article-back-link">
+                ← Tüm Bilgilendirme Yazıları
+            </a>
+
+        </aside>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends "website/base.html" %}
+
+{% block title %}Yumurtalık Kistleri Tedavisi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Bursa'da yumurtalık kistleri hakkında bilgi alın. Yumurtalık kisti belirtileri, tanı yöntemleri, takip, tedavi ve laparoskopik cerrahi seçenekleri.{% endblock %}
+
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · JİNEKOLOJİ</span>
+
+        <h1>Yumurtalık Kistleri</h1>
+
+        <p>
+            Yumurtalık kistleri kadınlarda sık görülebilen oluşumlardır.
+            Çoğu kist iyi huyludur ve takip sırasında kendiliğinden
+            gerileyebilir; bazı durumlarda ise daha ayrıntılı değerlendirme
+            veya tedavi gerekebilir.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container">
+
+        <div class="article-layout">
+
+            <article class="article-content">
+
+                <h2>Yumurtalık kisti nedir?</h2>
+
+                <p>
+                    Yumurtalık kistleri, yumurtalık içerisinde veya yüzeyinde
+                    gelişebilen sıvı içerikli ya da farklı özellikte
+                    oluşumlardır.
+                </p>
+
+                <p>
+                    Üreme çağındaki kadınlarda adet döngüsüyle ilişkili
+                    fonksiyonel kistler sık görülür ve bu kistlerin önemli
+                    bir bölümü belirli bir süre içerisinde kendiliğinden
+                    kaybolabilir.
+                </p>
+
+
+                <h2>Belirtileri nelerdir?</h2>
+
+                <p>
+                    Yumurtalık kistleri bazı hastalarda hiçbir belirti
+                    oluşturmayabilir. Belirti oluştuğunda şu yakınmalar
+                    görülebilir:
+                </p>
+
+                <ul>
+                    <li>Kasık veya pelvik bölgede ağrı</li>
+                    <li>Karında dolgunluk veya şişkinlik hissi</li>
+                    <li>Adet düzensizlikleri</li>
+                    <li>Cinsel ilişki sırasında ağrı</li>
+                    <li>Sık idrara çıkma veya çevre organlarda baskı hissi</li>
+                </ul>
+
+
+                <h2>Tanı nasıl konulur?</h2>
+
+                <p>
+                    Yumurtalık kistlerinin değerlendirilmesinde jinekolojik
+                    muayene ve ultrasonografi temel yöntemlerdir.
+                </p>
+
+                <p>
+                    Kistin büyüklüğü, iç yapısı ve ultrasonografik özellikleri
+                    değerlendirilerek takip veya ileri inceleme gerekip
+                    gerekmediğine karar verilir.
+                </p>
+
+
+                <h2>Her yumurtalık kisti ameliyat gerektirir mi?</h2>
+
+                <p>
+                    Hayır. Birçok yumurtalık kisti yalnızca takip edilebilir.
+                    Tedavi kararı kistin türü, boyutu, hastanın yaşı,
+                    şikâyetleri ve görüntüleme bulguları dikkate alınarak
+                    verilir.
+                </p>
+
+                <p>
+                    Takip sırasında büyüyen, kalıcı olan, belirgin şikâyete
+                    neden olan veya özellikleri nedeniyle daha ayrıntılı
+                    değerlendirme gerektiren kistlerde cerrahi tedavi
+                    gündeme gelebilir.
+                </p>
+
+
+                <h2>Cerrahi tedavi</h2>
+
+                <p>
+                    Cerrahi gereken uygun hastalarda laparoskopik yani
+                    kapalı cerrahi yöntemler kullanılabilir.
+                </p>
+
+                <p>
+                    Cerrahinin amacı ve kapsamı hastanın yaşı, kistin
+                    özellikleri ve gelecekteki gebelik planı dikkate alınarak
+                    kişiye özel şekilde belirlenir.
+                </p>
+
+
+                <h2>Bilgilendirme Notu</h2>
+
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Tanı ve tedavi için kişisel tıbbi değerlendirme gereklidir.
+                </p>
+
+            </article>
+
+
+            <aside class="article-sidebar">
+
+                <div class="article-appointment-card">
+                    <span class="section-kicker">RANDEVU</span>
+
+                    <h3>Değerlendirme için randevu</h3>
+
+                    <p>
+                        Yumurtalık kistleri ve tedavi seçenekleri hakkında
+                        kişisel değerlendirme için randevu oluşturabilirsiniz.
+                    </p>
+
+                    <a href="{% url 'website:contact' %}">
+                        Randevu Al
+                    </a>
+                </div>
+
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">
+                    ← Tüm Bilgilendirme Yazıları
+                </a>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

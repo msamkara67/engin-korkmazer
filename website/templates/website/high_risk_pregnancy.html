@@ -1,0 +1,138 @@
+{% extends "website/base.html" %}
+
+{% block title %}Riskli Gebelik Takibi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Bursa'da riskli gebelik takibi, yüksek riskli gebeliklerin değerlendirilmesi, anne ve bebek sağlığının izlenmesi hakkında bilgi alın.{% endblock %}
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · GEBELİK</span>
+
+        <h1>Riskli Gebelik Nedir?</h1>
+
+        <p>
+            Anne veya bebeğe ait bazı risk faktörlerinin bulunduğu gebeliklerde
+            daha yakın takip ve kişiye özel değerlendirme gerekebilir.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container">
+
+        <div class="article-layout">
+
+            <article class="article-content">
+
+                <h2>Riskli gebelik nedir?</h2>
+
+                <p>
+                    Riskli gebelik; anne adayının, bebeğin veya her ikisinin
+                    sağlığını etkileyebilecek bazı durumların bulunduğu
+                    gebelikleri ifade eder.
+                </p>
+
+                <p>
+                    Bir gebeliğin riskli olarak değerlendirilmesi mutlaka
+                    gebelikte bir problem oluşacağı anlamına gelmez. Amaç,
+                    olası riskleri erken dönemde belirlemek ve gebelik sürecini
+                    uygun şekilde takip etmektir.
+                </p>
+
+
+                <h2>Hangi durumlarda gebelik riskli kabul edilebilir?</h2>
+
+                <p>
+                    Gebeliğin daha yakından takip edilmesini gerektirebilecek
+                    bazı durumlar şunlardır:
+                </p>
+
+                <ul>
+                    <li>İleri anne yaşı</li>
+                    <li>Çoğul gebelikler</li>
+                    <li>Gebelikte yüksek tansiyon</li>
+                    <li>Gebelik şekeri</li>
+                    <li>Önceki gebeliklerde yaşanan komplikasyonlar</li>
+                    <li>Anne adayında kronik hastalık bulunması</li>
+                    <li>Bebeğin gelişimiyle ilgili sorunlar</li>
+                    <li>Plasenta ile ilgili problemler</li>
+                    <li>Erken doğum riski</li>
+                </ul>
+
+
+                <h2>Riskli gebelik takibi nasıl yapılır?</h2>
+
+                <p>
+                    Takip planı anne adayının sağlık durumu, gebelik haftası,
+                    önceki gebelik öyküsü ve bebeğin gelişimi dikkate alınarak
+                    kişiye özel şekilde oluşturulur.
+                </p>
+
+                <p>
+                    Gerekli durumlarda daha sık muayene, ultrasonografi,
+                    laboratuvar testleri ve bebeğin gelişimini değerlendirmeye
+                    yönelik ek incelemeler planlanabilir.
+                </p>
+
+
+                <h2>Fetal değerlendirme</h2>
+
+                <p>
+                    Gebelik sürecinde bebeğin büyümesi, gelişimi ve genel sağlık
+                    durumu ultrasonografik değerlendirmelerle takip edilebilir.
+                    Gerekli görülen durumlarda ayrıntılı fetal incelemeler
+                    yapılabilir.
+                </p>
+
+
+                <h2>Doğum planlaması</h2>
+
+                <p>
+                    Riskli gebeliklerde doğum zamanı ve doğum şekli her hasta
+                    için ayrı değerlendirilir. Anne ve bebeğin sağlık durumu,
+                    gebelik haftası ve mevcut risk faktörleri doğum planının
+                    belirlenmesinde dikkate alınır.
+                </p>
+
+
+                <h2>Bilgilendirme Notu</h2>
+
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Gebelik takibi ve tıbbi kararlar için kişisel değerlendirme
+                    gereklidir.
+                </p>
+
+            </article>
+
+
+            <aside class="article-sidebar">
+
+                <div class="article-appointment-card">
+                    <span class="section-kicker">RANDEVU</span>
+
+                    <h3>Gebelik değerlendirmesi için randevu</h3>
+
+                    <p>
+                        Gebelik takibi ve kişisel risk faktörleriniz hakkında
+                        değerlendirme için randevu oluşturabilirsiniz.
+                    </p>
+
+                    <a href="{% url 'website:contact' %}">Randevu Al</a>
+                </div>
+
+                <a class="article-back-link"
+                   href="{% url 'website:patient_info' %}">
+                    ← Tüm Bilgilendirme Yazıları
+                </a>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
