@@ -1940,3 +1940,22 @@ a {
     color: #ffffff;
 }
 
+/* HEADER WIDTH FIX */
+
+.site-header .container {
+    width: min(1480px, calc(100% - 48px));
+    max-width: none;
+}
+
+.header-inner {
+    gap: 24px;
+}
+
+.main-nav {
+    gap: 16px;
+}
+
+.brand {
+    flex: 0 0 auto;
+}
+
