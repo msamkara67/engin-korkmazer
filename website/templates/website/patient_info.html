@@ -2,7 +2,7 @@
 
 {% block title %}Hasta Bilgilendirme | Kadın Sağlığı Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
 
-{% block meta_description %}Kadın sağlığı, gebelik, jinekolojik hastalıklar ve cerrahi tedaviler hakkında bilgilendirici içeriklere ulaşın. Doç. Dr. Engin Korkmazer, Bursa.{% endblock %}
+{% block meta_description %}Kadın sağlığı, jinekoloji, jinekolojik onkoloji, ürojinekoloji, plasental yapışıklıklar ve yüksek riskli gebelik hakkında bilgilendirici içerikler. Doç. Dr. Engin Korkmazer, Bursa.{% endblock %}
 
 {% block content %}
 
@@ -13,8 +13,8 @@
         <h1>Doğru Bilgi,<br>Daha Güvenli Kararlar</h1>
 
         <p>
-            Kadın sağlığı, jinekolojik hastalıklar, gebelik ve cerrahi tedaviler
-            hakkında sık merak edilen konulara yönelik bilgilendirici içerikler.
+            Kadın sağlığı, jinekolojik hastalıklar, onkoloji, ürojinekoloji,
+            gebelik ve cerrahi tedaviler hakkında bilgilendirici içerikler.
         </p>
     </div>
 </section>
@@ -27,14 +27,59 @@
 
             <article class="patient-info-card">
                 <span class="patient-info-category">JİNEKOLOJİ</span>
-                <h2>Endometriozis Nedir?</h2>
+                <h2>Endometriosis (Çikolata Kisti)</h2>
 
                 <p>
-                    Endometriozisin belirtileri, tanısı ve tedavi seçenekleri
-                    hakkında temel bilgiler.
+                    Endometriosis, çikolata kisti, belirtileri, tanısı ve
+                    tedavi seçenekleri hakkında bilgiler.
                 </p>
 
                 <a href="{% url 'website:endometriosis' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>Myom</h2>
+
+                <p>
+                    Myomların risk faktörleri, belirtileri, tanısı ve
+                    cerrahi tedavi seçenekleri.
+                </p>
+
+                <a href="{% url 'website:fibroids' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>HPV</h2>
+
+                <p>
+                    HPV enfeksiyonu, yüksek riskli HPV tipleri, smear ve HPV
+                    tarama testleri hakkında bilgiler.
+                </p>
+
+                <a href="{% url 'website:hpv' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">JİNEKOLOJİ</span>
+                <h2>Yumurtalık Kistleri</h2>
+
+                <p>
+                    Yumurtalık kistlerinin türleri, takip gereksinimi ve
+                    cerrahi tedavi gereken durumlar.
+                </p>
+
+                <a href="{% url 'website:ovarian_cysts' %}">
                     Devamını Oku →
                 </a>
             </article>
@@ -49,59 +94,99 @@
                     ve ameliyat sonrası dönem.
                 </p>
 
-                <a href="{% url 'website:laparoscopic_hysterectomy' %}">Devamını Oku →</a>
+                <a href="{% url 'website:laparoscopic_hysterectomy' %}">
+                    Devamını Oku →
+                </a>
             </article>
 
 
             <article class="patient-info-card">
-                <span class="patient-info-category">JİNEKOLOJİ</span>
-                <h2>Miyomlar ve Tedavi Seçenekleri</h2>
+                <span class="patient-info-category">ONKOLOJİ</span>
+                <h2>Rahim Ağzı Kanseri</h2>
 
                 <p>
-                    Miyomların belirtileri, takip süreci ve hangi durumlarda
-                    cerrahi tedavi gerekebileceği.
+                    Serviks kanserinin risk faktörleri, belirtileri,
+                    tanı yöntemleri ve tedavi seçenekleri.
                 </p>
 
-                <a href="{% url 'website:fibroids' %}">Devamını Oku →</a>
+                <a href="{% url 'website:cervical_cancer' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">ONKOLOJİ</span>
+                <h2>Yumurtalık Kanseri</h2>
+
+                <p>
+                    Yumurtalık kanserinin belirtileri, değerlendirme yöntemleri,
+                    cerrahi ve kemoterapi seçenekleri.
+                </p>
+
+                <a href="{% url 'website:ovarian_cancer' %}">
+                    Devamını Oku →
+                </a>
             </article>
 
 
             <article class="patient-info-card">
                 <span class="patient-info-category">ÜROJİNEKOLOJİ</span>
-                <h2>İdrar Kaçırma</h2>
+                <h2>Üriner İnkontinans (İdrar Kaçırma)</h2>
 
                 <p>
-                    Kadınlarda idrar kaçırma nedenleri, değerlendirme yöntemleri
-                    ve güncel tedavi seçenekleri.
+                    Stres inkontinans, aşırı aktif mesane, değerlendirme
+                    ve tedavi seçenekleri hakkında bilgiler.
                 </p>
 
-                <a href="{% url 'website:urinary_incontinence' %}">Devamını Oku →</a>
+                <a href="{% url 'website:urinary_incontinence' %}">
+                    Devamını Oku →
+                </a>
             </article>
 
 
             <article class="patient-info-card">
-                <span class="patient-info-category">GEBELİK</span>
-                <h2>Riskli Gebelik Nedir?</h2>
+                <span class="patient-info-category">ÜROJİNEKOLOJİ</span>
+                <h2>Rahim Sarkması</h2>
 
                 <p>
-                    Hangi gebeliklerin yüksek riskli kabul edildiği ve takip
-                    sürecinde nelere dikkat edildiği.
+                    Uterin prolapsus, belirtileri, evreleri ve cerrahi
+                    dahil tedavi seçenekleri hakkında bilgiler.
                 </p>
 
-                <a href="{% url 'website:high_risk_pregnancy' %}">Devamını Oku →</a>
+                <a href="{% url 'website:uterine_prolapse' %}">
+                    Devamını Oku →
+                </a>
             </article>
 
 
             <article class="patient-info-card">
-                <span class="patient-info-category">JİNEKOLOJİ</span>
-                <h2>Yumurtalık Kistleri</h2>
+                <span class="patient-info-category">PLASENTAL YAPIŞIKLIKLAR</span>
+                <h2>Plasenta Previa – Percreta</h2>
 
                 <p>
-                    Yumurtalık kistlerinin türleri, takip gereksinimi ve
-                    cerrahi tedavi gereken durumlar.
+                    Aşağı yerleşimli ve yapışık plasenta, risk faktörleri,
+                    tanı, takip ve cerrahi tedavi hakkında bilgiler.
                 </p>
 
-                <a href="{% url 'website:ovarian_cysts' %}">Devamını Oku →</a>
+                <a href="{% url 'website:placenta_percreta' %}">
+                    Devamını Oku →
+                </a>
+            </article>
+
+
+            <article class="patient-info-card">
+                <span class="patient-info-category">YÜKSEK RİSKLİ GEBELİK</span>
+                <h2>Riskli Gebelik</h2>
+
+                <p>
+                    Yüksek riskli gebeliklerin değerlendirilmesi ve
+                    gebelik takip süreci hakkında bilgiler.
+                </p>
+
+                <a href="{% url 'website:high_risk_pregnancy' %}">
+                    Devamını Oku →
+                </a>
             </article>
 
         </div>

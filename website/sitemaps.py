@@ -13,15 +13,27 @@ class StaticViewSitemap(Sitemap):
             "website:expertise",
             "website:patient_info",
             "website:contact",
+
             "website:endometriosis",
-            "website:laparoscopic_hysterectomy",
+            "website:hpv",
             "website:fibroids",
-            "website:urinary_incontinence",
-            "website:high_risk_pregnancy",
-            "website:ovarian_cysts",
+
+            "website:laparoscopic_hysterectomy",
             "website:advanced_laparoscopic_surgery",
+
+            "website:ovarian_cysts",
+
             "website:gynecologic_oncology",
+            "website:cervical_cancer",
+            "website:ovarian_cancer",
+
             "website:urogynecology",
+            "website:urinary_incontinence",
+            "website:uterine_prolapse",
+
+            "website:placenta_percreta",
+
+            "website:high_risk_pregnancy",
         ]
 
     def location(self, item):

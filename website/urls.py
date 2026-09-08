@@ -11,6 +11,7 @@ urlpatterns = [
     path("hasta-bilgilendirme/", views.patient_info, name="patient_info"),
     path("iletisim/", views.contact, name="contact"),
     path("endometriozis/", views.endometriosis, name="endometriosis"),
+    path("hpv/", views.hpv, name="hpv"),
     path(
         "laparoskopik-histerektomi/",
         views.laparoscopic_hysterectomy,
@@ -52,4 +53,30 @@ urlpatterns = [
         views.urogynecology,
         name="urogynecology"
     ),
+
+    path(
+        "rahim-sarkmasi/",
+        views.uterine_prolapse,
+        name="uterine_prolapse"
+    ),
+
+    path(
+        "rahim-agzi-kanseri/",
+        views.cervical_cancer,
+        name="cervical_cancer"
+    ),
+
+    path(
+        "yumurtalik-kanseri/",
+        views.ovarian_cancer,
+        name="ovarian_cancer"
+    ),
+
+    path(
+        "plasenta-previa-percreta/",
+        views.placenta_percreta,
+        name="placenta_percreta"
+    ),
+
+    
 ]

@@ -1,0 +1,150 @@
+{% extends "website/base.html" %}
+
+{% block title %}Rahim Ağzı Kanseri Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+
+{% block meta_description %}Rahim ağzı kanseri (serviks kanseri), belirtileri, risk faktörleri, tanı yöntemleri ve tedavi seçenekleri hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · ONKOLOJİ</span>
+
+        <h1>Serviks (Rahim Ağzı) Kanseri</h1>
+
+        <p>
+            Rahim Ağzı Kanseri (serviks kanseri), rahim ağzındaki hücrelerin
+            kontrolsüz şekilde çoğalmaya başlamasıyla ortaya çıkan bir durumdur.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container article-layout">
+
+        <article class="article-content">
+
+            <h2>Rahim ağzı kanseri nedir?</h2>
+
+            <p>
+                Rahim Ağzı Kanseri (serviks kanseri), dünyada kadınlar arasında
+                4. sıklıkta görülen kanser olmakla birlikte ülkemizde görülme
+                sıklığı olarak 10. sırada yer almaktadır.
+            </p>
+
+            <p>
+                Rahim Ağzı Kanseri (serviks kanseri), özellikle HPV virüsü ile
+                yüksek oranda bağlantısı olan, rahim ağzındaki hücrelerin kontrolsüz
+                şekilde çoğalmaya başlamasıyla ortaya çıkan bir durumdur.
+            </p>
+
+            <p>
+                Rahim ağzı kanseri, dünyada taraması (Smear ve HPV Taraması) olan
+                ve daha kanser halini almadan tespit edilebilen iki kanserden bir
+                tanesidir.
+            </p>
+
+
+            <h2>Risk faktörleri</h2>
+
+            <p>
+                Rahim Ağzı Kanseri için en önemli risk faktörü sigara içiciliğidir.
+                Bunun dışında çoklu cinsel partner, çok sayıda doğum yapmak ve
+                bağışıklık sistemini baskılayan ilaçların kullanımı diğer ana risk
+                faktörleridir.
+            </p>
+
+
+            <h2>Belirtileri nelerdir?</h2>
+
+            <p>
+                Rahim Ağzı Kanseri, genelde erken dönemde belirti vermeyen bir
+                kanser türüdür. Bu yüzden tarama programları önemlidir.
+            </p>
+
+            <p>
+                En sık bulguları, anormal vajinal akıntı, ara kanama ve ilişki
+                sonrası kanamadır.
+            </p>
+
+            <p>
+                Hastalık yayıldıkça kabızlık ya da idrar kaçırma gibi diğer organ
+                tutulumlarına ait bulgular ortaya çıkarlar.
+            </p>
+
+
+            <h2>Tanı nasıl konulur?</h2>
+
+            <p>
+                Rahim Ağzı Kanserinde muayenede rahim ağzında kitle görünümü temel
+                bulgudur. Muayene ve ultrasonda kitle tanımlandıktan sonra nihai
+                tanı biyopsi ile konulur.
+            </p>
+
+            <p>
+                Biyopsi ile rahim ağzı kanseri tanısı doğrulandıktan sonra hastalığın
+                yaygınlığını tespit etmek için MR, PET gibi görüntüleme yöntemlerine
+                geçilir.
+            </p>
+
+
+            <h2>Tedavi seçenekleri</h2>
+
+            <p>
+                Rahim Ağzı Kanserinde tedavi kişiye özgüdür.
+            </p>
+
+            <p>
+                Hastalığın yaygınlığı, kişinin beklentileri, doğurganlık durumu ve
+                ek hastalıklara göre tedavi şekli belirlenir.
+            </p>
+
+            <p>
+                Rahim Ağzı Kanseri tedavisinde cerrahi, radyoterapi ve kemoterapi
+                genelde kombinasyon halinde kullanılır.
+            </p>
+
+
+            <div class="article-note">
+                <strong>Bilgilendirme Notu</strong>
+                <p>
+                    Bu sayfadaki bilgiler genel bilgilendirme amacı taşımaktadır.
+                    Tanı ve tedavi için kişisel tıbbi değerlendirme gereklidir.
+                </p>
+            </div>
+
+        </article>
+
+
+        <aside class="article-sidebar">
+
+            <div class="article-side-card">
+                <span class="contact-label">RANDEVU</span>
+
+                <h3>Değerlendirme için randevu</h3>
+
+                <p>
+                    Rahim ağzı kanseri, tarama sonuçları ve tedavi seçenekleri
+                    hakkında kişisel değerlendirme için randevu oluşturabilirsiniz.
+                </p>
+
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-primary">
+                    Randevu Al
+                </a>
+            </div>
+
+            <a href="{% url 'website:patient_info' %}"
+               class="article-back-link">
+                ← Tüm Bilgilendirme Yazıları
+            </a>
+
+        </aside>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -57,3 +57,18 @@ Sitemap: {scheme}://{host}/sitemap.xml
     )
 
     return HttpResponse(content, content_type="text/plain")
+
+def hpv(request):
+    return render(request, "website/hpv.html")
+
+def uterine_prolapse(request):
+    return render(request, "website/uterine_prolapse.html")
+
+def cervical_cancer(request):
+    return render(request, "website/cervical_cancer.html")
+
+def ovarian_cancer(request):
+    return render(request, "website/ovarian_cancer.html")
+
+def placenta_percreta(request):
+    return render(request, "website/placenta_percreta.html")
