@@ -349,3 +349,64 @@ document.addEventListener("DOMContentLoaded", function () {
     renderSideVideos();
 
 });
+
+/* ==========================================================
+   HERO SLIDER
+========================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll(".hero-slide");
+    const dots = document.querySelectorAll(".hero-dot");
+
+    if (!slides.length || !dots.length) return;
+
+    let currentSlide = 0;
+    let sliderInterval;
+
+    function showSlide(index) {
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        dots.forEach((dot) => {
+            dot.classList.remove("active");
+        });
+
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function startSlider() {
+        sliderInterval = setInterval(nextSlide, 7000);
+    }
+
+    function resetSlider() {
+        clearInterval(sliderInterval);
+        startSlider();
+    }
+
+    dots.forEach((dot) => {
+
+        dot.addEventListener("click", function () {
+
+            const index = parseInt(this.dataset.slide);
+
+            showSlide(index);
+            resetSlider();
+
+        });
+
+    });
+
+    startSlider();
+
+});

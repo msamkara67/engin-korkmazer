@@ -3956,3 +3956,70 @@ a {
     display: block;
     white-space: nowrap;
 }
+
+/* ==========================================================
+   HERO SLIDER
+========================================================== */
+
+.hero-slider {
+    position: relative;
+    min-height: 330px;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(6px);
+
+    transition:
+        opacity 1.4s ease-in-out,
+        transform 1.4s ease-in-out,
+        visibility 1.4s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hero-slider-dots {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #b9cfe0;
+
+    cursor: pointer;
+    padding: 0;
+
+    transition:
+        width .25s ease,
+        background .25s ease;
+}
+
+.hero-dot.active {
+    width: 28px;
+    border-radius: 999px;
+    background: #176ec2;
+}
+
+/* HERO SLIDER - DOT / BUTTON SPACING */
+
+.hero-slider-dots {
+    margin-bottom: 24px !important;
+}
