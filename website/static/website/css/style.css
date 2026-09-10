@@ -3896,3 +3896,63 @@ a {
         border-radius: 12px !important;
     }
 }
+
+/* ==========================================================
+   HEADER EK LOGO
+========================================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title,
+.brand-subtitle {
+    display: block;
+}
+
+/* HEADER BRAND - LOGO + TEXT SIDE BY SIDE */
+
+.site-header .brand {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.site-header .brand-logo {
+    width: 58px !important;
+    height: 58px !important;
+    object-fit: contain;
+    flex: 0 0 58px;
+}
+
+.site-header .brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.site-header .brand-title {
+    display: block;
+    white-space: nowrap;
+}
+
+.site-header .brand-subtitle {
+    display: block;
+    white-space: nowrap;
+}

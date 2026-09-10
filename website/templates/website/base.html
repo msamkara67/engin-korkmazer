@@ -87,8 +87,16 @@
     <div class="container header-inner">
 
         <a href="{% url 'website:home' %}" class="brand">
-            <span class="brand-title">Doç. Dr. Engin Korkmazer</span>
-            <span class="brand-subtitle">Kadın Hastalıkları ve Doğum Uzmanı</span>
+
+            <img src="{% static 'website/images/ek-logo.png' %}"
+                alt="EK"
+                class="brand-logo">
+
+            <div class="brand-text">
+                <span class="brand-title">Doç. Dr. Engin Korkmazer</span>
+                <span class="brand-subtitle">Kadın Hastalıkları ve Doğum Uzmanı</span>
+            </div>
+
         </a>
 
         <nav class="main-nav">
