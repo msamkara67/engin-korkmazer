@@ -366,8 +366,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showSlide(index) {
 
-        slides.forEach((slide) => {
-            slide.classList.remove("active");
+        slides.forEach((slide, i) => {
+
+            slide.classList.remove("active", "leaving");
+
+            if (i === currentSlide && i !== index) {
+                slide.classList.add("leaving");
+            }
+
         });
 
         dots.forEach((dot) => {

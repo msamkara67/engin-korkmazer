@@ -135,6 +135,12 @@ a {
     border-radius: 3px;
 }
 
+.hero-slide.leaving {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-100%);
+}
+
 
 /* HERO */
 
@@ -3964,27 +3970,25 @@ a {
 .hero-slider {
     position: relative;
     min-height: 330px;
+    overflow: hidden;
 }
 
 .hero-slide {
     position: absolute;
     inset: 0;
 
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
 
-    transform: translateY(6px);
+    transform: translateX(100%);
 
-    transition:
-        opacity 1.4s ease-in-out,
-        transform 1.4s ease-in-out,
-        visibility 1.4s ease-in-out;
+    transition: transform 1.9s ease-in-out;
 }
 
 .hero-slide.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .hero-slider-dots {
