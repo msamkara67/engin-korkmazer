@@ -1,0 +1,150 @@
+{% extends "website/base.html" %}
+
+{% block title %}
+LEEP ve Konizasyon Operasyonu | Doç. Dr. Engin Korkmazer
+{% endblock %}
+
+{% block meta_description %}
+LEEP ve Konizasyon işlemleri, rahim ağzındaki kanser öncüsü lezyonların tedavisinde kullanılan yöntemlerdir. İşlem süreci, farkları ve iyileşme dönemi hakkında bilgi.
+{% endblock %}
+
+{% block content %}
+
+<section class="article-hero">
+    <div class="container">
+        <span class="section-label">JİNEKOLOJİK ONKOLOJİ</span>
+
+        <h1>LEEP ve Konizasyon Operasyonu</h1>
+
+        <p>
+            Rahim ağzı dokusundaki kanser öncüsü lezyonların tedavisinde kullanılan
+            iki temel yöntem hakkında bilgilendirme.
+        </p>
+    </div>
+</section>
+
+
+<section class="article-page">
+    <div class="container">
+
+        <div class="article-layout">
+
+            <article class="article-content">
+
+                <h2>LEEP ve Konizasyon Nedir?</h2>
+
+                <p>
+                    LEEP (Loop Electrosurgical Excision Procedure) ve Konizasyon,
+                    rahim ağzı (serviks) dokusundaki, kanser öncüsü lezyonları
+                    tedavi etmek amaçlı kullanılan iki temel yöntemdir.
+                    LEEP ile Konizasyonun temel farkı çıkartılan doku derinliğidir.
+                    LEEP işlemi de temelde bir konizasyondur.
+                </p>
+
+                <p>
+                    Bu yöntemlerde temel amaç rahim ağzındaki hastalıklı ya da
+                    iyileşmeyen dokuların çıkarılmasıdır.
+                </p>
+
+
+                <h2>LEEP ve Konizasyon Arasındaki Fark</h2>
+
+                <p>
+                    LEEP ile daha yüzeysel bir doku çıkarılırken, konizasyonda daha
+                    derin bir doku çıkarılır. Her ikisinde de temel amaç en az doku
+                    kaybı oluştururken, lezyonu tam olarak çıkarmaktır.
+                </p>
+
+                <p>
+                    LEEP işleminde daha çok lokal anestezi tercih edilirken,
+                    konizasyonda sedasyon ya da genel anestezi ön plandadır.
+                </p>
+
+
+                <h2>İşlem Süresi ve Hastaneden Çıkış</h2>
+
+                <p>
+                    İşlem ortalama 10-15 dakika sürmektedir.
+                    Her iki işlem de günübirlik işlemler olup, kişi işlem sonrası
+                    1 saat içinde eve gidebilmektedir.
+                </p>
+
+
+                <h2>Doğurganlık Üzerine Etkisi</h2>
+
+                <p>
+                    LEEP ya da Konizasyon işleminin doğurganlık üzerine belirgin
+                    etkisi yoktur.
+                </p>
+
+                <p>
+                    Konizasyon işlemi çok geniş doku çıkarıldığı durumlarda erken
+                    doğum ihtimalini bir miktar arttırabilmektedir.
+                </p>
+
+
+                <h2>İyileşme Süreci</h2>
+
+                <p>
+                    LEEP ve Konizasyon sonrası kişi ertesi gün günlük hayata
+                    dönebilmekle birlikte denize girme ve cinsel ilişki ortalama
+                    2-4 hafta yasaklanmaktadır.
+                </p>
+
+                <p>
+                    Yine 2-4 hafta arasında kanlı akıntı olabilmektedir.
+                    Bununla birlikte kalıcı ağrı beklenen bir durum değildir.
+                </p>
+
+
+                <div class="article-note">
+                    <strong>Bilgilendirme Notu</strong>
+
+                    <p>
+                        Uygulanacak yöntemin seçimi; lezyonun özelliklerine,
+                        yaygınlığına ve hastanın klinik durumuna göre hekim
+                        değerlendirmesi ile belirlenir.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <aside class="article-sidebar">
+
+                <div class="article-side-card">
+
+                    <span class="section-label">ONKOLOJİ</span>
+
+                    <h3>Jinekolojik Onkoloji</h3>
+
+                    <p>
+                        Rahim ağzı ve diğer jinekolojik hastalıkların tanı ve
+                        tedavisine yönelik bilgilendirme.
+                    </p>
+
+                    <a
+                        href="{% url 'website:gynecologic_oncology' %}"
+                        class="btn"
+                    >
+                        Onkoloji Sayfası
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="{% url 'website:patient_info' %}"
+                    class="article-back-link"
+                >
+                    ← Hasta Bilgilendirme
+                </a>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -78,5 +78,7 @@ urlpatterns = [
         name="placenta_percreta"
     ),
 
+    path("leep-konizasyon/", views.leep_conization, name="leep_conization"),
+
     
 ]

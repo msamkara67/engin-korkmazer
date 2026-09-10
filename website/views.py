@@ -72,3 +72,6 @@ def ovarian_cancer(request):
 
 def placenta_percreta(request):
     return render(request, "website/placenta_percreta.html")
+
+def leep_conization(request):
+    return render(request, "website/leep_conization.html")
