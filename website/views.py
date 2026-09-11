@@ -75,3 +75,6 @@ def placenta_percreta(request):
 
 def leep_conization(request):
     return render(request, "website/leep_conization.html")
+
+def endometrium_cancer(request):
+    return render(request, "website/endometrium_cancer.html")

@@ -80,5 +80,11 @@ urlpatterns = [
 
     path("leep-konizasyon/", views.leep_conization, name="leep_conization"),
 
+    path(
+        "rahim-endometrium-kanseri/",
+        views.endometrium_cancer,
+        name="endometrium_cancer",
+    ),
+
     
 ]
