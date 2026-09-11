@@ -4268,3 +4268,128 @@ a {
 
     transform: translateY(-1px);
 }
+
+/* ==========================================================
+   VIDEO PAGINATION - STRONGER ARROWS
+========================================================== */
+
+.video-pagination {
+    gap: 18px !important;
+    align-items: center;
+}
+
+
+/* BOTH BUTTONS */
+
+.video-pagination button {
+    width: 54px !important;
+    height: 54px !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 !important;
+
+    border: 2px solid #176ec2 !important;
+    border-radius: 50% !important;
+
+    background: #ffffff !important;
+    color: #176ec2 !important;
+
+    font-size: 0 !important;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+/* DRAW CLEAN CHEVRON */
+
+.video-pagination button::before {
+    content: "";
+
+    width: 11px;
+    height: 11px;
+
+    display: block;
+
+    border-top: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+
+    border-radius: 1px;
+}
+
+
+/* LEFT */
+
+.video-pagination button:first-child::before {
+    transform: rotate(-135deg);
+    margin-left: 4px;
+}
+
+
+/* RIGHT */
+
+.video-pagination button:last-child {
+    background: #176ec2 !important;
+    color: #ffffff !important;
+
+    box-shadow:
+        0 8px 20px rgba(23, 110, 194, .18);
+}
+
+.video-pagination button:last-child::before {
+    transform: rotate(45deg);
+    margin-right: 4px;
+}
+
+
+/* HOVER */
+
+.video-pagination button:first-child:hover {
+    background: #edf7ff !important;
+    transform: translateX(-2px);
+}
+
+.video-pagination button:last-child:hover {
+    background: #123f6d !important;
+    border-color: #123f6d !important;
+    transform: translateX(2px);
+}
+
+
+/* PAGE NUMBER */
+
+#video-group-number {
+    min-width: 50px !important;
+
+    font-size: 14px !important;
+    font-weight: 500;
+
+    color: #536d84 !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .video-pagination button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .video-pagination button::before {
+        width: 10px;
+        height: 10px;
+
+        border-top-width: 3px;
+        border-right-width: 3px;
+    }
+}
