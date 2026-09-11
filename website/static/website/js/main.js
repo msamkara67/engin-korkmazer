@@ -416,3 +416,102 @@ document.addEventListener("DOMContentLoaded", function () {
     startSlider();
 
 });
+
+/* ==========================================================
+   MOBILE HEADER / HAMBURGER MENU
+========================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector(".site-header");
+    const menuToggle = document.querySelector(".mobile-menu-toggle");
+    const dropdowns = document.querySelectorAll(".nav-dropdown");
+
+    if (!header || !menuToggle) return;
+
+
+    /* MAIN MOBILE MENU */
+
+    menuToggle.addEventListener("click", function () {
+
+        const isOpen = header.classList.toggle("menu-open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+    });
+
+
+    /* MOBILE DROPDOWNS */
+
+    dropdowns.forEach(function (dropdown) {
+
+        const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+
+        if (!toggle) return;
+
+        toggle.addEventListener("click", function (event) {
+
+            if (window.innerWidth > 900) return;
+
+            event.preventDefault();
+
+            dropdowns.forEach(function (otherDropdown) {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove("mobile-open");
+                }
+            });
+
+            dropdown.classList.toggle("mobile-open");
+
+        });
+
+    });
+
+
+    /* CLOSE MENU WHEN NORMAL LINK IS CLICKED */
+
+    const navLinks = document.querySelectorAll(
+        ".main-nav > a:not(.appointment-button), .nav-dropdown-menu a, .appointment-button"
+    );
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            if (window.innerWidth > 900) return;
+
+            header.classList.remove("menu-open");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.classList.remove("mobile-open");
+            });
+
+        });
+
+    });
+
+
+    /* RESET WHEN RETURNING TO DESKTOP */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > 900) {
+
+            header.classList.remove("menu-open");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.classList.remove("mobile-open");
+            });
+
+        }
+
+    });
+
+});
