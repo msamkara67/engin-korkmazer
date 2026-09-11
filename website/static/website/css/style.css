@@ -3982,7 +3982,7 @@ a {
 
     transform: translateX(100%);
 
-    transition: transform 1.9s ease-in-out;
+    transition: transform 1.0s ease-in-out;
 }
 
 .hero-slide.active {
