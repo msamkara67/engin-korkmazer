@@ -4224,3 +4224,47 @@ a {
         transform: translateY(-7px) rotate(-45deg);
     }
 }
+
+/* ==========================================================
+   INNER PAGE APPOINTMENT BUTTON
+========================================================== */
+
+.article-side-card .btn,
+.about-info-card .btn,
+.contact-page .btn,
+.expertise-page .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+    padding: 13px 22px;
+
+    background: #123f6d !important;
+    color: #ffffff !important;
+
+    border: 1px solid #123f6d !important;
+    border-radius: 4px !important;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none !important;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+.article-side-card .btn:hover,
+.about-info-card .btn:hover,
+.contact-page .btn:hover,
+.expertise-page .btn:hover {
+    background: #176ec2 !important;
+    border-color: #176ec2 !important;
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+}

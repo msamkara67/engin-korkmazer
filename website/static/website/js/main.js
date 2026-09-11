@@ -413,6 +413,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    /* TOUCH / SWIPE CONTROL */
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    const slider = document.querySelector(".hero-slider");
+
+    if (slider) {
+
+        slider.addEventListener("touchstart", function (event) {
+
+            touchStartX = event.changedTouches[0].screenX;
+            touchStartY = event.changedTouches[0].screenY;
+
+        }, { passive: true });
+
+
+        slider.addEventListener("touchend", function (event) {
+
+            const touchEndX = event.changedTouches[0].screenX;
+            const touchEndY = event.changedTouches[0].screenY;
+
+            const diffX = touchStartX - touchEndX;
+            const diffY = touchStartY - touchEndY;
+
+            /* Vertical movement is greater:
+            user is scrolling the page, do nothing */
+            if (Math.abs(diffY) > Math.abs(diffX)) {
+                return;
+            }
+
+            /* Ignore very small finger movements */
+            if (Math.abs(diffX) < 50) {
+                return;
+            }
+
+
+            /* Swipe left -> next slide */
+            if (diffX > 0) {
+
+                const next = (currentSlide + 1) % slides.length;
+
+                showSlide(next);
+                resetSlider();
+
+            }
+
+            /* Swipe right -> previous slide */
+            else {
+
+                const previous =
+                    (currentSlide - 1 + slides.length) % slides.length;
+
+                showSlide(previous);
+                resetSlider();
+
+            }
+
+        }, { passive: true });
+
+    }
+
     startSlider();
 
 });
