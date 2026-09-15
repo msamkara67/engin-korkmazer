@@ -1,0 +1,47 @@
+{% extends "website/base.html" %}
+
+{% block title %}CIN – Servikal İntraepitelyal Neoplazi | Doç. Dr. Engin Korkmazer{% endblock %}
+{% block meta_description %}CIN – Servikal İntraepitelyal Neoplazi hakkında bilgilendirme. CIN 1, CIN 2, CIN 3 ve tedavi sonrası takip hakkında Doç. Dr. Engin Korkmazer'in açıklamaları.{% endblock %}
+
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-label">ONKOLOJİ</span>
+        <h1>CIN – Servikal İntraepitelyal Neoplazi</h1>
+        <p>CIN 1, CIN 2, CIN 3 ve tedavi sonrası takip hakkında bilgilendirme.</p>
+    </div>
+</section>
+
+<section class="article-page">
+    <div class="container">
+        <div class="article-layout">
+            <article class="article-content">
+                <h2>CIN nedir?</h2>
+                <p>CIN (Cervical Intraepithelial Neoplasia), servikal intraepitelyal neoplazi teriminin kısaltmasıdır. CIN terimi rahim ağzı kanserinin öncül lezyonlarını tanımlamak için kullanılır ve kanser anlamına gelmemektedir. Temelde 3 dereceye ayrılır.</p>
+
+                <h2>CIN 1</h2>
+                <p>Rahim ağzında hafif değişiklikleri tarif eder. Kansere ilerleme ihtimali nispeten düşüktür. İlaç tedavileriyle ya da spontan olarak gerileyebilir. Ancak lezyonun devamlılığı, önceki smear sonuçları ve ek risk faktörlerinin varlığına göre cerrahi seçenekler gündeme gelebilir.</p>
+
+                <h2>CIN 2</h2>
+                <p>Rahim ağzında orta dereceli değişiklikleri tarif eder. Burada kansere ilerleme olasılığı bilinmelidir. Tedavi burada bireyselleştirilmeli ve kişiye göre planlanmalıdır. Tedavide cerrahi seçenek ön planda olmakla birlikte özellikle henüz çocuğu olmayan kişilerde durum ve riskler paylaşılmalı ve ona göre bir yol çizilmelidir. LEEP gibi daha az servikal dokunun çıkarıldığı işlemler CIN 2 tedavisinde bir basamak daha öne çıkmaktadır.</p>
+
+                <h2>CIN 3</h2>
+                <p>Rahim ağzında şiddetli değişiklikleri tarif eder. Kanser öncüsü oldukça önemli bir lezyondur. Mutlaka önemsenmeli ve kesin bir tedavi planlanmalıdır. Bu durumda cerrahi tedaviler ön plandadır. Hastanın ek faktörleri de değerlendirilmeli ve LEEP ya da Konizasyon gibi bir cerrahi prosedür seçilmeli ve negatif cerrahi sınır elde edilmelidir. Az da olsa rahim ağzı kanseri ile birlikte bulunabilmekte ve bazen konizasyon sonucunda rahim ağzı kanseri saptanabilmektedir.</p>
+
+                <h2>CIN tedavisi sonrası takip</h2>
+                <p>CIN lezyonlarının hepsi tekrarlama potansiyeline sahiptir. Bu yüzden kişi mutlaka takip altında kalmalıdır. CIN tedavisi sonrası takip prosedürleri hastalığın durumuna, kişinin özelliklerine ve tedaviye yanıta göre planlanır.</p>
+            </article>
+
+            <aside class="article-sidebar">
+                <div class="article-side-card">
+                    <span class="section-label">ONKOLOJİ</span>
+                    <h3>LEEP ve Konizasyon</h3>
+                    <p>LEEP ve Konizasyon işlemleri hakkında bilgi alın.</p>
+                    <a href="{% url 'website:leep_conization' %}" class="btn">Detaylı Bilgi</a>
+                </div>
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">← Hasta Bilgilendirme</a>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}

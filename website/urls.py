@@ -12,6 +12,8 @@ urlpatterns = [
     path("iletisim/", views.contact, name="contact"),
     path("endometriozis/", views.endometriosis, name="endometriosis"),
     path("hpv/", views.hpv, name="hpv"),
+    path("kolposkopi/", views.colposcopy, name="colposcopy"),
+    path("cin/", views.cin, name="cin"),
     path(
         "laparoskopik-histerektomi/",
         views.laparoscopic_hysterectomy,

@@ -16,6 +16,7 @@ class StaticViewSitemap(Sitemap):
 
             "website:endometriosis",
             "website:hpv",
+            "website:colposcopy",
             "website:fibroids",
 
             "website:laparoscopic_hysterectomy",
@@ -25,6 +26,7 @@ class StaticViewSitemap(Sitemap):
 
             "website:gynecologic_oncology",
             "website:cervical_cancer",
+            "website:cin",
             "website:ovarian_cancer",
 
             "website:urogynecology",

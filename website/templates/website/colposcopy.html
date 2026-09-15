@@ -1,0 +1,47 @@
+{% extends "website/base.html" %}
+
+{% block title %}Kolposkopi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+{% block meta_description %}Kolposkopi nedir, hangi durumlarda yapılır? Kolposkopik inceleme, biyopsi ve sonuç süresi hakkında Doç. Dr. Engin Korkmazer'in bilgilendirmesi.{% endblock %}
+
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-label">JİNEKOLOJİ</span>
+        <h1>Kolposkopi</h1>
+        <p>Rahim ağzı ve vajinal dokunun ayrıntılı incelenmesine yönelik bir tanı yöntemi.</p>
+    </div>
+</section>
+
+<section class="article-page">
+    <div class="container">
+        <div class="article-layout">
+            <article class="article-content">
+                <h2>Kolposkopi nedir?</h2>
+                <p>Kolposkopi, rahim ağzı ve vajinal dokunun bir mikroskop eşliğinde incelenmesi işlemidir. Burada rahim ağzı ve vajinal dokular büyütülerek ayrıntılı olarak incelenir.</p>
+                <p>Bu işlem esnasında dokulara incelemeyi kolaylaştırmak ve görünürlüğü arttırmak amaçlı çeşitli boyalar (asetik asit, lügol vs.) uygulanır. Şüpheli görünen alanlardan biyopsi alınarak hastalığın tanısı amaçlı patolojik incelemeye gönderilir.</p>
+                <p>Kolposkopik inceleme ağrılı bir inceleme değildir. Lokal ya da genel anestezi altında yapılabilir.</p>
+
+                <h2>Hangi durumlarda yapılır?</h2>
+                <p>Kolposkopi rahim ağzında şüpheli bir lezyon görüldüğünde, anormal smear sonuçlarında (LSIL, HSIL, AGUS, ASC-H vs.), yüksek riskli HPV tespit edildiğinde ya da kanser nedenli takip edilen hastalarda nüks şüphesi gibi durumlarda yapılabilir.</p>
+
+                <h2>İşlem ve biyopsi sonucu ne kadar sürer?</h2>
+                <p>İşlem 5-10 dakika arasında sürmektedir. Biyopsi alındıysa sonucu ortalama 5-7 gün içinde çıkmaktadır.</p>
+
+                <h2>Kolposkopi ile neler tespit edilir?</h2>
+                <p>Kolposkopi temelde bir tanı yöntemidir. Rahim ağzında kanser ya da kanser öncüsü lezyonları tespit etmek amaçlı kullanılır.</p>
+                <p>Kolposkopi sonucunda rahim ağzında iyi huylu değişiklikler, CIN (Servikal İntraepitelyal Neoplazi) ve erken evre rahim ağzı kanseri saptanabilir ve bunlara yönelik tedavi planlanır.</p>
+            </article>
+
+            <aside class="article-sidebar">
+                <div class="article-side-card">
+                    <span class="section-label">JİNEKOLOJİ</span>
+                    <h3>HPV</h3>
+                    <p>HPV hakkında bilgi alın.</p>
+                    <a href="{% url 'website:hpv' %}" class="btn">HPV Hakkında</a>
+                </div>
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">← Hasta Bilgilendirme</a>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}

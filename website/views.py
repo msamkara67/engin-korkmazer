@@ -78,3 +78,10 @@ def leep_conization(request):
 
 def endometrium_cancer(request):
     return render(request, "website/endometrium_cancer.html")
+
+def colposcopy(request):
+    return render(request, "website/colposcopy.html")
+
+
+def cin(request):
+    return render(request, "website/cin.html")
