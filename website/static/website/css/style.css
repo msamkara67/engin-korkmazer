@@ -3969,13 +3969,16 @@ a {
 
 .hero-slider {
     position: relative;
+    display: grid;
     min-height: 330px;
     overflow: hidden;
 }
 
 .hero-slide {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    grid-area: 1 / 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 
     opacity: 1;
     visibility: hidden;
