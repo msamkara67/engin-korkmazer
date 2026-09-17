@@ -6,6 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% if request.get_host == 'enginkorkmazer.com' or request.get_host == 'www.enginkorkmazer.com' %}
+    <!-- Google Analytics: production site only. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL0BWSPJ2X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SL0BWSPJ2X', {
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false
+        });
+    </script>
+    {% endif %}
+
     <title>{% block title %}Doç. Dr. Engin Korkmazer{% endblock %}</title>
 
     <meta name="description" content="{% block meta_description %}Doç. Dr. Engin Korkmazer - Kadın Hastalıkları ve Doğum Uzmanı{% endblock %}">
