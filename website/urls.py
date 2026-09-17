@@ -14,6 +14,7 @@ urlpatterns = [
     path("hpv/", views.hpv, name="hpv"),
     path("kolposkopi/", views.colposcopy, name="colposcopy"),
     path("cin/", views.cin, name="cin"),
+    path("vajinal-agenezi/", views.vaginal_agenesis, name="vaginal_agenesis"),
     path(
         "laparoskopik-histerektomi/",
         views.laparoscopic_hysterectomy,

@@ -85,3 +85,7 @@ def colposcopy(request):
 
 def cin(request):
     return render(request, "website/cin.html")
+
+
+def vaginal_agenesis(request):
+    return render(request, "website/vaginal_agenesis.html")
