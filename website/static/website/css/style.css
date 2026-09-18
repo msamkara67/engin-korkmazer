@@ -4396,3 +4396,26 @@ a {
         border-right-width: 3px;
     }
 }
+/* Clinic location in the shared header and appointment cards. */
+.site-header .brand-location {
+    display: block;
+    margin-top: 3px;
+    color: #345e80;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.appointment-address {
+    margin: 18px 0 0;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+.appointment-address a {
+    color: #345e80;
+    text-decoration: none;
+}
+.appointment-address a:hover {
+    text-decoration: underline;
+}

@@ -36,6 +36,7 @@
                     <h3>Randevu ve İletişim</h3>
                     <p>Randevu ve iletişim bilgilerine ulaşın.</p>
                     <a href="{% url 'website:contact' %}" class="btn">İletişim</a>
+                    {% include "website/appointment_address.html" %}
                 </div>
                 <a href="{% url 'website:patient_info' %}" class="article-back-link">← Hasta Bilgilendirme</a>
             </aside>
