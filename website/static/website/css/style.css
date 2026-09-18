@@ -4467,3 +4467,20 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+/* Hasta Yorumlari Button */
+.medical-btn--reviews {
+    background: #ffffff;
+    color: #0f4c81;
+    border: 2px solid #0f4c81;
+}
+
+.medical-btn--reviews:hover {
+    background: #eef6fc;
+    color: #0f4c81;
+}
+
+.medical-btn--reviews i {
+    margin-right: 7px;
+    color: #f4b400;
+}
