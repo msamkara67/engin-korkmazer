@@ -4405,6 +4405,7 @@ a {
     line-height: 1.4;
     font-weight: 500;
 }
+
 .appointment-address {
     margin: 18px 0 0;
     font-style: normal;
@@ -4412,10 +4413,57 @@ a {
     line-height: 1.7;
     overflow-wrap: anywhere;
 }
+
 .appointment-address a {
     color: #345e80;
     text-decoration: none;
 }
+
 .appointment-address a:hover {
     text-decoration: underline;
+}
+
+
+/* =========================================================
+   HOME FEATURED SERVICES - 5 ITEMS
+   ========================================================= */
+
+.service-strip-section .container {
+    max-width: 1500px;
+    width: calc(100% - 40px);
+}
+
+.service-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
+}
+
+.service-strip__item {
+    min-width: 0;
+    padding: 24px 22px;
+}
+
+.service-strip__content {
+    min-width: 0;
+}
+
+.service-strip__content h3 {
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .service-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-strip__content h3 {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 650px) {
+    .service-strip {
+        grid-template-columns: 1fr;
+    }
 }
