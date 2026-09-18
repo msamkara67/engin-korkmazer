@@ -1,0 +1,45 @@
+{% extends "website/base.html" %}
+{% block title %}Histeroskopi | Doç. Dr. Engin Korkmazer{% endblock %}
+{% block meta_description %}Histeroskopi nedir? Rahim içinin değerlendirilmesi, histeroskopi ile yapılan işlemler ve işlem sonrası süreç hakkında bilgilendirme.{% endblock %}
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-label">JİNEKOLOJİ</span>
+        <h1>Histeroskopi</h1>
+        <p>Rahim içinin kameralı bir sistemle incelenmesi ve saptanan patolojilerin tedavisi.</p>
+    </div>
+</section>
+<section class="article-page">
+    <div class="container">
+        <div class="article-layout">
+            <article class="article-content">
+                <h2>Histeroskopi nedir?</h2>
+                <p>Histeroskopi, rahim içinin kameralı bir sistemle gözlem altında incelenmesi ve varsa saptanan patolojilerin (polip, myom, şekil bozukluğu, duvar düzensizliği, perde vs.) tedavi edilmesini sağlayan bir cerrahi yöntemdir. Histeroskopinin diğer yöntemlere göre en büyük avantajı direkt gözlem altında lezyonun tamamının görülmesi ve aynı esnada tedavi edilebilmesidir.</p>
+                <p>Histeroskopik cerrahi minimal invaziv bir cerrahi yöntem olup genelde hastanede kalış gerektirmez. Hasta işlemden birkaç saat sonra evine gidebilir. Komplikasyon ihtimali oldukça düşüktür.</p>
+                <h2>İşlem sırasında neler değerlendirilir?</h2>
+                <p>Histeroskopi anestezi altında yapılan bir işlem olduğu için işlem esnasında ağrı, acı hissedilmez. Histeroskopi rahmin iç tabakasının direkt olarak görülmesini ve değerlendirilmesini sağlar. Histeroskopi ile tüpleri ve yumurtalıkları değerlendirmek mümkün değildir.</p>
+                <h2>Histeroskopi ile hangi işlemler yapılabilir?</h2>
+                <ul>
+                    <li>Dirençli kanamalar tedavi edilebilir.</li>
+                    <li>Miyomlar ve polipler alınabilir.</li>
+                    <li>Rahim içindeki yapışıklıklar açılabilir.</li>
+                    <li>Rahim duvarındaki şekil bozuklukları ve perdeler (uterin septum) düzeltilebilir.</li>
+                    <li>Tüp bebek öncesi rahim duvarı değerlendirilip gerekirse çizik atılabilir.</li>
+                    <li>Rahim içine kaçan spiral çıkarılabilir.</li>
+                </ul>
+                <h2>İşlem süresi ve iyileşme</h2>
+                <p>Histeroskopik cerrahi, yapılacak işleme göre 10-30 dakika arasında sürebilir. Cerrahi sonrasında hasta anestezinin etkisi geçinceye kadar (1-3 saat) takip edilir. İşlem sonrasında hafif derecede adet sancısına benzer kasık ağrısı olabilir. Kişi sonrasında 1-2 gün içinde günlük hayatına devam edebilir.</p>
+            </article>
+            <aside class="article-sidebar">
+                <div class="article-side-card">
+                    <span class="section-label">İLETİŞİM</span>
+                    <h3>Randevu ve İletişim</h3>
+                    <p>Randevu ve iletişim bilgilerine ulaşın.</p>
+                    <a href="{% url 'website:contact' %}" class="btn">İletişim</a>
+                </div>
+                <a href="{% url 'website:patient_info' %}" class="article-back-link">← Hasta Bilgilendirme</a>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}

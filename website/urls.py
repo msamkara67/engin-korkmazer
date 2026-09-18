@@ -4,6 +4,7 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
+    path("histeroskopi/", views.hysteroscopy, name="hysteroscopy"),
     path("robots.txt", views.robots_txt, name="robots_txt"),
     path("", views.home, name="home"),
     path("hakkimda/", views.about, name="about"),

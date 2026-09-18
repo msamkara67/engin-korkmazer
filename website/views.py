@@ -89,3 +89,7 @@ def cin(request):
 
 def vaginal_agenesis(request):
     return render(request, "website/vaginal_agenesis.html")
+
+
+def hysteroscopy(request):
+    return render(request, "website/hysteroscopy.html")
