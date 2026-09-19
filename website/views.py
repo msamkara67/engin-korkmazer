@@ -93,3 +93,11 @@ def vaginal_agenesis(request):
 
 def hysteroscopy(request):
     return render(request, "website/hysteroscopy.html")
+
+
+def hpv_vaccine(request):
+    return render(request, "website/hpv_vaccine.html")
+
+
+def laparoscopic_myomectomy(request):
+    return render(request, "website/laparoscopic_myomectomy.html")

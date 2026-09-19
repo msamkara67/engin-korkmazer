@@ -4,6 +4,7 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
+    path("rahim-koruyucu-laparoskopik-miyom-cerrahisi/", views.laparoscopic_myomectomy, name="laparoscopic_myomectomy"),
     path("histeroskopi/", views.hysteroscopy, name="hysteroscopy"),
     path("robots.txt", views.robots_txt, name="robots_txt"),
     path("", views.home, name="home"),
@@ -13,6 +14,7 @@ urlpatterns = [
     path("iletisim/", views.contact, name="contact"),
     path("endometriozis/", views.endometriosis, name="endometriosis"),
     path("hpv/", views.hpv, name="hpv"),
+    path("hpv-asisi/", views.hpv_vaccine, name="hpv_vaccine"),
     path("kolposkopi/", views.colposcopy, name="colposcopy"),
     path("cin/", views.cin, name="cin"),
     path("vajinal-agenezi/", views.vaginal_agenesis, name="vaginal_agenesis"),

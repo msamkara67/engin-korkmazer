@@ -16,10 +16,12 @@ class StaticViewSitemap(Sitemap):
 
             "website:endometriosis",
             "website:hpv",
+            "website:hpv_vaccine",
             "website:colposcopy",
             "website:hysteroscopy",
             "website:vaginal_agenesis",
             "website:fibroids",
+            "website:laparoscopic_myomectomy",
 
             "website:laparoscopic_hysterectomy",
             "website:advanced_laparoscopic_surgery",
