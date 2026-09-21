@@ -39,6 +39,7 @@ class StaticViewSitemap(Sitemap):
             "website:urogynecology",
             "website:urinary_incontinence",
             "website:uterine_prolapse",
+            "website:laparoscopic_sacrocolpopexy",
 
             "website:placenta_percreta",
             "website:placenta_preserving_surgery",

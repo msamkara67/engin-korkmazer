@@ -1,0 +1,50 @@
+{% extends "website/base.html" %}
+{% block title %}Laparoskopik Sakrokolpopeksi Bursa | Doç. Dr. Engin Korkmazer{% endblock %}
+{% block meta_description %}Rahim sarkması tedavisinde laparoskopik sakrokolpopeksi ve ameliyat sonrası takip hakkında Doç. Dr. Engin Korkmazer'in bilgilendirmesi.{% endblock %}
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-label">ÜROJİNEKOLOJİ</span>
+        <h1>Rahim Sarkması Tedavisinde Laparoskopik Sakrokolpopeksi</h1>
+        <p>Cerrahi yöntem ve ameliyat sonrası takip hakkında bilgilendirme.</p>
+    </div>
+</section>
+<section class="article-page">
+    <div class="container">
+        <div class="article-layout">
+            <article class="article-content">
+                <p>Rahim ve vajinanın bulunduğu bölgedeki organların zamanla aşağı doğru sarkması, kadınlarda sık karşılaşılan bir problemdir. Bu duruma genel olarak pelvik organ sarkması adı verilir.</p>
+                <p>Özellikle doğumlar, yaşın ilerlemesi, menopoz, fazla kilo, kronik kabızlık veya uzun süreli ağır kaldırma gibi durumlar pelvik bölgedeki destek dokularının zayıflamasına neden olabilir.</p>
+                <p>Sarkma ileri düzeye geldiğinde vajinada aşağı doğru bir dolgunluk veya ele gelen bir kitle hissi, idrar kaçırma veya idrar yapmada güçlük, kabızlık ve cinsel ilişkide rahatsızlık gibi şikâyetlere yol açabilir.</p>
+                <h2>Laparoskopik sakrokolpopeksi nedir?</h2>
+                <p>Laparoskopik sakrokolpopeksi, özellikle belirgin vajinal sarkması olan kadınlarda uygulanan bir ameliyat yöntemidir.</p>
+                <p>Ameliyatta karında büyük bir kesi yapmak yerine birkaç küçük kesiden kamera ve özel cerrahi aletler kullanılır. Vajinanın sarkan bölümü yukarı doğru kaldırılır ve özel bir cerrahi materyal (mesh) kullanılarak pelvisin güçlü bir bölümüne, genellikle kuyruk sokumu bölgesindeki kemiğin ön tarafına asılır.</p>
+                <p>Böylece vajina tekrar olması gereken konuma getirilir ve desteklenir.</p>
+                <h2>Ameliyatın avantajları nelerdir?</h2>
+                <p>Laparoskopik yöntemde büyük bir karın kesisi yerine küçük kesiler kullanıldığı için genellikle;</p>
+                <ul>
+                    <li>Daha küçük ameliyat kesileri,</li>
+                    <li>Daha az ameliyat sonrası ağrı,</li>
+                    <li>Daha hızlı günlük yaşama dönüş,</li>
+                    <li>Daha kısa hastanede kalış süresi,</li>
+                    <li>Daha az yara problemi</li>
+                </ul>
+                <p>gibi avantajlar sağlar.</p>
+                <h2>Ameliyattan sonra nelere dikkat edilir?</h2>
+                <p>İyileşme döneminde ağır kaldırmamak, uzun süreli öksürük ve kabızlıktan kaçınmak, güçlendirici egzersizleri yapmak ve doktorun önerilerine uymak önemlidir. Cinsel ilişkiye ve normal fiziksel aktivitelere ne zaman başlanacağı, ameliyatın iyileşme durumuna göre doktor tarafından belirlenir.</p>
+                <p>Laparoskopik sakrokolpopeksinin en önemli avantajı minimal invaziv bir cerrahi olmasının yanında vajinal anatominin en iyi korunduğu, vajinal derinliğin en fazla olduğu ve nüks (sarkmanın tekrar etme olasılığının) riskinin en az olduğu ameliyat çeşididir.</p>
+            </article>
+            <aside class="article-sidebar">
+                <div class="article-side-card">
+                    <span class="contact-label">RANDEVU</span>
+                    <h3>Değerlendirme için randevu</h3>
+                    <p>Kişisel değerlendirme için randevu oluşturabilirsiniz.</p>
+                    <a href="https://www.doktortakvimi.com/profil/engin-korkmazer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Randevu Al</a>
+                    {% include "website/appointment_address.html" %}
+                </div>
+                <a href="{% url 'website:uterine_prolapse' %}" class="article-back-link">← Rahim Sarkması</a>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}

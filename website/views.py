@@ -117,3 +117,7 @@ def placenta_preserving_surgery(request):
 
 def laparoscopic_neovagina(request):
     return render(request, "website/laparoscopic_neovagina.html")
+
+
+def laparoscopic_sacrocolpopexy(request):
+    return render(request, "website/laparoscopic_sacrocolpopexy.html")
