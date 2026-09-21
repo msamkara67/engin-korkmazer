@@ -17,6 +17,7 @@ class StaticViewSitemap(Sitemap):
             "website:endometriosis",
             "website:hpv",
             "website:hpv_vaccine",
+            "website:intrauterine_device",
             "website:colposcopy",
             "website:hysteroscopy",
             "website:vaginal_agenesis",

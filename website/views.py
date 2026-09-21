@@ -105,3 +105,7 @@ def laparoscopic_myomectomy(request):
 
 def vulvar_cancer(request):
     return render(request, "website/vulvar_cancer.html")
+
+
+def intrauterine_device(request):
+    return render(request, "website/intrauterine_device.html")
