@@ -109,3 +109,7 @@ def vulvar_cancer(request):
 
 def intrauterine_device(request):
     return render(request, "website/intrauterine_device.html")
+
+
+def placenta_preserving_surgery(request):
+    return render(request, "website/placenta_preserving_surgery.html")

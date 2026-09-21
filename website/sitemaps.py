@@ -40,6 +40,7 @@ class StaticViewSitemap(Sitemap):
             "website:uterine_prolapse",
 
             "website:placenta_percreta",
+            "website:placenta_preserving_surgery",
 
             "website:high_risk_pregnancy",
         ]
