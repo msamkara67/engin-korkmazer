@@ -101,3 +101,7 @@ def hpv_vaccine(request):
 
 def laparoscopic_myomectomy(request):
     return render(request, "website/laparoscopic_myomectomy.html")
+
+
+def vulvar_cancer(request):
+    return render(request, "website/vulvar_cancer.html")
