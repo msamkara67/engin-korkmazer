@@ -113,3 +113,7 @@ def intrauterine_device(request):
 
 def placenta_preserving_surgery(request):
     return render(request, "website/placenta_preserving_surgery.html")
+
+
+def laparoscopic_neovagina(request):
+    return render(request, "website/laparoscopic_neovagina.html")

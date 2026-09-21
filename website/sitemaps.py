@@ -21,6 +21,7 @@ class StaticViewSitemap(Sitemap):
             "website:colposcopy",
             "website:hysteroscopy",
             "website:vaginal_agenesis",
+            "website:laparoscopic_neovagina",
             "website:fibroids",
             "website:laparoscopic_myomectomy",
 
