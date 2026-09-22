@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const videos = [
         {
-            id: "jUyA1gLIKSg",
+            id: "Wdqhq9UZ5QM",
             category: "JİNEKOLOJİK ONKOLOJİ",
             title: "Eylül 2026 — Jinekolojik Kanserler Farkındalık Ayı"
         },
