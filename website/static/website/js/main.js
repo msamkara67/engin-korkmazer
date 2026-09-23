@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "cbzwvtSGDRo",
             category: "VİDEOLAR",
-            title: "Doç. Dr. Engin Korkmazer"
+            title: "Kadın Kanserleri Hakkında"
         },
 
         {
