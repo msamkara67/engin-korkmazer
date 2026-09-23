@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         {
+            id: "cbzwvtSGDRo",
+            category: "VİDEOLAR",
+            title: "Doç. Dr. Engin Korkmazer"
+        },
+
+        {
             id: "AS64zxLgn40",
             category: "LAPAROSKOPİK CERRAHİ",
             title: "Laparoskopik cerrahi uygulamaları"
