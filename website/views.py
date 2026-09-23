@@ -121,3 +121,7 @@ def laparoscopic_neovagina(request):
 
 def laparoscopic_sacrocolpopexy(request):
     return render(request, "website/laparoscopic_sacrocolpopexy.html")
+
+
+def smear_hpv_test(request):
+    return render(request, "website/smear_hpv_test.html")

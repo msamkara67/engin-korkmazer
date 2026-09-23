@@ -32,6 +32,7 @@ class StaticViewSitemap(Sitemap):
 
             "website:gynecologic_oncology",
             "website:cervical_cancer",
+            "website:smear_hpv_test",
             "website:cin",
             "website:ovarian_cancer",
             "website:vulvar_cancer",
