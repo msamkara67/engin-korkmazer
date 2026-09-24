@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         {
+            id: "ActFl2yGE38",
+            category: "JİNEKOLOJİ",
+            title: "Çikolata Kisti ve Kapalı Ameliyat"
+        },
+
+        {
             id: "AS64zxLgn40",
             category: "LAPAROSKOPİK CERRAHİ",
             title: "Laparoskopik cerrahi uygulamaları"
