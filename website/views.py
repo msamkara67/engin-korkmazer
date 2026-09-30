@@ -125,3 +125,15 @@ def laparoscopic_sacrocolpopexy(request):
 
 def smear_hpv_test(request):
     return render(request, "website/smear_hpv_test.html")
+
+
+def asherman_syndrome(request):
+    return render(request, "website/asherman_syndrome.html")
+
+
+def uterine_septum(request):
+    return render(request, "website/uterine_septum.html")
+
+
+def genital_warts(request):
+    return render(request, "website/genital_warts.html")
