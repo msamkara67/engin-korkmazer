@@ -19,6 +19,8 @@ class StaticViewSitemap(Sitemap):
             "website:genital_warts",
             "website:hpv_vaccine",
             "website:intrauterine_device",
+            "website:nexplanon",
+            "website:abortion",
             "website:colposcopy",
             "website:hysteroscopy",
             "website:asherman_syndrome",
@@ -42,6 +44,7 @@ class StaticViewSitemap(Sitemap):
 
             "website:urogynecology",
             "website:urinary_incontinence",
+            "website:overactive_bladder",
             "website:uterine_prolapse",
             "website:laparoscopic_sacrocolpopexy",
 

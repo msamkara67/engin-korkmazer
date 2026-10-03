@@ -4,6 +4,9 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
+    path("nexplanon-cilt-alti-implanti/", views.nexplanon, name="nexplanon"),
+    path("kurtaj/", views.abortion, name="abortion"),
+    path("asiri-aktif-mesane/", views.overactive_bladder, name="overactive_bladder"),
     path("genital-sigil/", views.genital_warts, name="genital_warts"),
     path("uterin-septum-rahim-perdesi/", views.uterine_septum, name="uterine_septum"),
     path("rahimde-yapisiklik-asherman-sendromu/", views.asherman_syndrome, name="asherman_syndrome"),

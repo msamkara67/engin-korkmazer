@@ -1,0 +1,66 @@
+{% extends "website/base.html" %}
+
+{% block title %}Nexplanon (Cilt Altı İmplantı) | Doç. Dr. Engin Korkmazer Bursa{% endblock %}
+{% block meta_description %}Nexplanon cilt altı implantının uygulanması, koruma süresi, avantajları, olası yan etkileri ve çıkarılması hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · JİNEKOLOJİ</span>
+        <h1>Nexplanon (Cilt Altı İmplantı) Nedir?</h1>
+        <p>Cilt altı implantının uygulanması ve doğum kontrolünde kullanımı hakkında bilgilendirme.</p>
+    </div>
+</section>
+<section class="article-page">
+    <div class="container article-layout">
+        <article class="article-content">
+            <p>Nexplanon, gebeliği önlemek amacıyla kullanılan, kolun üst iç kısmındaki derinin altına yerleştirilen, küçük ve ince, kibrit çöpüne benzeyen esnek bir çubuktur. İçeriğinde bulunan etonogestrel adlı hormon sayesinde gebeliği önler. Uzun süre etkili, güvenilir ve geri dönüşümlü bir doğum kontrol yöntemidir.</p>
+
+            <h2>Nasıl etki eder?</h2>
+            <p>Nexplanon, temel olarak yumurtlamayı baskılayarak gebeliği önler. Ayrıca rahim ağzındaki salgıyı koyulaştırarak spermlerin rahme ulaşmasını zorlaştırır.</p>
+
+            <h2>Nasıl takılır?</h2>
+            <p>Nexplanon, doktor tarafından lokal anestezi uygulanarak, genellikle kolun üst iç kısmına, derinin hemen altına yerleştirilir. İşlem çoğunlukla birkaç dakika sürer ve cerrahi kesi gerektirmez. Takıldıktan sonra implant, kolun altında hissedilebilir.</p>
+
+            <h2>Ne kadar süre korur?</h2>
+            <p>Nexplanon, ürünün yerel kullanım talimatına göre genellikle 3 yıla kadar gebelikten koruma sağlar. Süresi dolduğunda çıkarılması veya yenisiyle değiştirilmesi gerekir. İstenirse bu süre beklenmeden de çıkarılabilir.</p>
+
+            <h2>Avantajları nelerdir?</h2>
+            <ul>
+                <li>Çok etkili bir doğum kontrol yöntemidir.</li>
+                <li>Her gün hap almayı veya ilişki sırasında bir yöntem kullanmayı gerektirmez.</li>
+                <li>Uzun süre koruma sağlar.</li>
+                <li>Çıkarıldığında doğurganlık genellikle kısa sürede geri döner.</li>
+                <li>Östrojen hormonu içermez; bu nedenle östrojen kullanamayan bazı kadınlar için uygun bir seçenek olabilir.</li>
+            </ul>
+
+            <h2>Yan etkileri var mıdır?</h2>
+            <p>En sık görülen yan etki, adet düzeninde değişiklik olmasıdır. Nexplanon kullanan kişilerde:</p>
+            <ul>
+                <li>Adet kanamaları düzensizleşebilir veya ara kanamalar görülebilir.</li>
+                <li>Adet kanamaları azalabilir ya da tamamen kesilebilir.</li>
+                <li>Baş ağrısı, akne, memelerde hassasiyet veya kilo değişikliği görülebilir.</li>
+                <li>Bazı kişilerde ruh hâli değişiklikleri yaşanabilir.</li>
+            </ul>
+            <p>Adetin kesilmesi tek başına zararlı olduğu anlamına gelmez. Ancak yoğun veya uzun süren kanama, şiddetli karın ağrısı ya da gebelik şüphesi varsa doktora başvurulmalıdır.</p>
+
+            <h2>Herkes kullanabilir mi?</h2>
+            <p>Nexplanon birçok kadın için uygun bir yöntem olsa da herkes için önerilmez. Özellikle meme kanseri öyküsü, ciddi karaciğer hastalığı, nedeni açıklanamayan vajinal kanama veya daha önce pıhtı oluşumu gibi durumlarda doktor değerlendirmesi gerekir. Bazı epilepsi ilaçları ve antibiyotikler de implantın koruyuculuğunu azaltabilir. Bu nedenle kullanılan ilaçlar mutlaka doktora bildirilmelidir.</p>
+
+            <h2>Çıkarıldığında ne olur?</h2>
+            <p>Gebelik planlandığında veya kişi başka bir doğum kontrol yöntemine geçmek istediğinde Nexplanon, doktor tarafından küçük bir işlemle çıkarılabilir. Çıkarıldıktan sonra doğurganlık genellikle kısa sürede geri döner. İstenmeyen gebelikten korunmaya devam edilecekse başka bir yönteme gecikmeden başlanmalıdır.</p>
+            <p>Nexplanon cinsel yolla bulaşan enfeksiyonlara karşı koruma sağlamaz. Bu enfeksiyonlardan korunmak için prezervatif kullanılmalıdır. Ayrıca implantın takılmasından sonra ne zaman koruma sağlayacağı, takılma zamanına bağlı olduğundan ilk günlerde ek korunma gerekip gerekmediği doktor tarafından açıklanmalıdır.</p>
+        </article>
+        <aside class="article-sidebar">
+            <div class="article-side-card">
+                <span class="contact-label">RANDEVU</span>
+                <h3>Değerlendirme için randevu</h3>
+                <p>Kişisel değerlendirme için randevu oluşturabilirsiniz.</p>
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Randevu Al</a>
+                {% include "website/appointment_address.html" %}
+            </div>
+            <a href="{% url 'website:patient_info' %}" class="article-back-link">← Tüm Bilgilendirme Yazıları</a>
+        </aside>
+    </div>
+</section>
+{% endblock %}

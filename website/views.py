@@ -30,6 +30,15 @@ def fibroids(request):
 def urinary_incontinence(request):
     return render(request, "website/urinary_incontinence.html")
 
+def overactive_bladder(request):
+    return render(request, "website/overactive_bladder.html")
+
+def abortion(request):
+    return render(request, "website/abortion.html")
+
+def nexplanon(request):
+    return render(request, "website/nexplanon.html")
+
 def high_risk_pregnancy(request):
     return render(request, "website/high_risk_pregnancy.html")
 
