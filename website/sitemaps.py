@@ -37,9 +37,12 @@ class StaticViewSitemap(Sitemap):
 
             "website:gynecologic_oncology",
             "website:cervical_cancer",
+            "website:trachelectomy",
             "website:smear_hpv_test",
             "website:cin",
             "website:ovarian_cancer",
+            "website:endometrial_hyperplasia",
+            "website:ovarian_fertility_sparing_surgery",
             "website:vulvar_cancer",
 
             "website:urogynecology",

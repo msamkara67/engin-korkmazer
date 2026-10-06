@@ -39,6 +39,15 @@ def abortion(request):
 def nexplanon(request):
     return render(request, "website/nexplanon.html")
 
+def trachelectomy(request):
+    return render(request, "website/trachelectomy.html")
+
+def ovarian_fertility_sparing_surgery(request):
+    return render(request, "website/ovarian_fertility_sparing_surgery.html")
+
+def endometrial_hyperplasia(request):
+    return render(request, "website/endometrial_hyperplasia.html")
+
 def high_risk_pregnancy(request):
     return render(request, "website/high_risk_pregnancy.html")
 

@@ -4,6 +4,9 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
+    path("endometrial-hiperplazi-rahim-duvari-kalinlasmasi/", views.endometrial_hyperplasia, name="endometrial_hyperplasia"),
+    path("yumurtalik-kanserinde-dogurganlik-koruyucu-cerrahi/", views.ovarian_fertility_sparing_surgery, name="ovarian_fertility_sparing_surgery"),
+    path("trakelektomi-ameliyati/", views.trachelectomy, name="trachelectomy"),
     path("nexplanon-cilt-alti-implanti/", views.nexplanon, name="nexplanon"),
     path("kurtaj/", views.abortion, name="abortion"),
     path("asiri-aktif-mesane/", views.overactive_bladder, name="overactive_bladder"),
