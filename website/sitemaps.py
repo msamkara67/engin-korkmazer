@@ -21,6 +21,7 @@ class StaticViewSitemap(Sitemap):
             "website:intrauterine_device",
             "website:nexplanon",
             "website:abortion",
+            "website:ectopic_pregnancy",
             "website:colposcopy",
             "website:hysteroscopy",
             "website:asherman_syndrome",

@@ -36,6 +36,9 @@ def overactive_bladder(request):
 def abortion(request):
     return render(request, "website/abortion.html")
 
+def ectopic_pregnancy(request):
+    return render(request, "website/ectopic_pregnancy.html")
+
 def nexplanon(request):
     return render(request, "website/nexplanon.html")
 

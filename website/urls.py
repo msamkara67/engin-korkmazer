@@ -9,6 +9,7 @@ urlpatterns = [
     path("trakelektomi-ameliyati/", views.trachelectomy, name="trachelectomy"),
     path("nexplanon-cilt-alti-implanti/", views.nexplanon, name="nexplanon"),
     path("kurtaj/", views.abortion, name="abortion"),
+    path("dis-gebelik/", views.ectopic_pregnancy, name="ectopic_pregnancy"),
     path("asiri-aktif-mesane/", views.overactive_bladder, name="overactive_bladder"),
     path("genital-sigil/", views.genital_warts, name="genital_warts"),
     path("uterin-septum-rahim-perdesi/", views.uterine_septum, name="uterine_septum"),
