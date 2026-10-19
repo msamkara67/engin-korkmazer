@@ -56,6 +56,7 @@ class StaticViewSitemap(Sitemap):
             "website:placenta_preserving_surgery",
 
             "website:high_risk_pregnancy",
+            "website:amniocentesis",
         ]
 
     def location(self, item):

@@ -54,6 +54,9 @@ def endometrial_hyperplasia(request):
 def high_risk_pregnancy(request):
     return render(request, "website/high_risk_pregnancy.html")
 
+def amniocentesis(request):
+    return render(request, "website/amniocentesis.html")
+
 def ovarian_cysts(request):
     return render(request, "website/ovarian_cysts.html")
 

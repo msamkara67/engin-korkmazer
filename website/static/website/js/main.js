@@ -533,17 +533,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         toggle.addEventListener("click", function (event) {
 
-            if (window.innerWidth > 900) return;
+            if (window.innerWidth > 900 && !dropdown.classList.contains("gynecology-dropdown")) return;
 
             event.preventDefault();
 
             dropdowns.forEach(function (otherDropdown) {
                 if (otherDropdown !== dropdown) {
                     otherDropdown.classList.remove("mobile-open");
+                    otherDropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
                 }
             });
 
             dropdown.classList.toggle("mobile-open");
+            toggle.setAttribute("aria-expanded", String(dropdown.classList.contains("mobile-open")));
 
         });
 
@@ -551,6 +553,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* CLOSE MENU WHEN NORMAL LINK IS CLICKED */
+
+    const gynecology = document.querySelector(".gynecology-dropdown");
+    gynecology?.querySelectorAll(".nav-topic-group > summary").forEach(function (summary) {
+        summary.addEventListener("click", function () {
+            gynecology.querySelectorAll(".nav-topic-group[open]").forEach(function (group) {
+                if (group !== summary.parentElement) group.open = false;
+            });
+        });
+    });
+    function closeGynecology() {
+        if (!gynecology) return;
+        gynecology.classList.remove("mobile-open");
+        gynecology.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "false");
+        gynecology.querySelectorAll("details[open]").forEach(group => group.open = false);
+    }
+    document.addEventListener("click", function (event) {
+        if (gynecology && !gynecology.contains(event.target)) closeGynecology();
+    });
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && gynecology?.classList.contains("mobile-open")) {
+            closeGynecology();
+            gynecology.querySelector(".nav-dropdown-toggle").focus();
+        }
+    });
+    window.addEventListener("resize", closeGynecology);
 
     const navLinks = document.querySelectorAll(
         ".main-nav > a:not(.appointment-button), .nav-dropdown-menu a, .appointment-button"

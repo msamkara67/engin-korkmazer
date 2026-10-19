@@ -4475,3 +4475,70 @@ a {
     margin-right: 7px;
     color: #f4b400;
 }
+/* Gynecology: click-to-open topic groups on desktop and mobile. */
+.gynecology-dropdown .nav-dropdown-menu {
+    width: min(360px, calc(100vw - 32px));
+    max-height: 65vh;
+    overflow-y: auto;
+}
+.gynecology-dropdown .nav-dropdown-menu a {
+    white-space: normal;
+}
+.nav-topic-group summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 18px;
+    color: #123f6d;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+.nav-topic-group summary::-webkit-details-marker { display: none; }
+.nav-topic-group summary::after { content: '+'; }
+.nav-topic-group[open] summary::after { content: '−'; }
+.nav-topic-group summary:hover { background: #e7f2fa; }
+.nav-topic-group summary:focus-visible { outline: 2px solid #176ec2; outline-offset: -2px; }
+.nav-topic-links { margin: 0 12px 8px 18px; border-left: 2px solid #cfe2f1; }
+@media (min-width: 901px) {
+    .gynecology-dropdown > .nav-dropdown-menu {
+        width: 285px;
+        max-height: none;
+        overflow: visible;
+    }
+    .nav-topic-group { position: relative; }
+    .nav-topic-group summary::after,
+    .nav-topic-group[open] summary::after { content: '›'; font-size: 20px; }
+    .nav-topic-group[open] > summary { background: #e7f2fa; }
+    .nav-topic-links {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 285px;
+        margin: 0;
+        padding: 8px 0;
+        background: #f6fbff;
+        border: 1px solid #cfe2f1;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        max-height: 60vh;
+        overflow-y: auto;
+        z-index: 1001;
+    }
+    .gynecology-dropdown:not(.mobile-open) > .nav-dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .gynecology-dropdown.mobile-open > .nav-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+@media (max-width: 900px) {
+    .gynecology-dropdown .nav-dropdown-menu { width: 100%; max-height: none; }
+    .nav-topic-group summary { padding: 9px 4px; font-size: 13px; }
+    .nav-topic-links { margin-left: 8px; padding-left: 10px; }
+}

@@ -189,85 +189,53 @@
 
 
             <!-- JİNEKOLOJİ -->
-            <div class="nav-dropdown">
-                <a href="#" class="nav-dropdown-toggle">
-                    Jinekoloji 
-                </a>
-
-                <div class="nav-dropdown-menu">
-
-                    <a href="{% url 'website:endometriosis' %}">
-                        Endometriozis (Çikolata Kisti)
-                    </a>
-
-                    <a href="{% url 'website:fibroids' %}">
-                        Myom
-                    </a>
-
-                    <a href="{% url 'website:laparoscopic_myomectomy' %}">
-                        Rahim Koruyucu Miyom Cerrahisi
-                    </a>
-
-                    <a href="{% url 'website:hpv' %}">
-                        HPV
-                    </a>
-                    <a href="{% url 'website:genital_warts' %}">
-                        Genital Siğil
-                    </a>
-
-                    <a href="{% url 'website:hpv_vaccine' %}">
-                        HPV Aşısı
-                    </a>
-
-                    <a href="{% url 'website:colposcopy' %}">
-                        Kolposkopi
-                    </a>
-
-                    <a href="{% url 'website:intrauterine_device' %}">
-                        Rahim İçi Araç (Spiral)
-                    </a>
-
-                    <a href="{% url 'website:nexplanon' %}">
-                        Nexplanon (Cilt Altı İmplantı)
-                    </a>
-
-                    <a href="{% url 'website:abortion' %}">
-                        Kürtaj
-                    </a>
-
-                    <a href="{% url 'website:ectopic_pregnancy' %}">
-                        Dış Gebelik: Tanı ve Tedavi
-                    </a>
-
-                    <a href="{% url 'website:hysteroscopy' %}">
-                        Histeroskopi
-                    </a>
-                    <a href="{% url 'website:asherman_syndrome' %}">
-                        Rahimde Yapışıklık (Asherman Sendromu)
-                    </a>
-                    <a href="{% url 'website:uterine_septum' %}">
-                        Uterin Septum (Rahim Perdesi)
-                    </a>
-
-                    <a href="{% url 'website:vaginal_agenesis' %}">
-                        Vajinal Agenezi
-                    </a>
-                    <a href="{% url 'website:laparoscopic_neovagina' %}">
-                        Laparoskopik Neovajina Cerrahisi
-                    </a>
-
-                    <a href="{% url 'website:ovarian_cysts' %}">
-                        Yumurtalık Kistleri
-                    </a>
-
-                    <a href="{% url 'website:laparoscopic_hysterectomy' %}">
-                        Laparoskopik Histerektomi
-                    </a>
-
-                    <a href="{% url 'website:advanced_laparoscopic_surgery' %}">
-                        İleri Laparoskopik Cerrahi
-                    </a>
-
+            <div class="nav-dropdown gynecology-dropdown">
+                <a href="#gynecology-menu" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="gynecology-menu">Jinekoloji</a>
+                <div class="nav-dropdown-menu" id="gynecology-menu">
+                    <details class="nav-topic-group">
+                        <summary>HPV</summary>
+                        <div class="nav-topic-links">
+                            <a href="{% url 'website:hpv' %}">HPV</a>
+                            <a href="{% url 'website:genital_warts' %}">Genital Siğil</a>
+                            <a href="{% url 'website:hpv_vaccine' %}">HPV Aşısı</a>
+                            <a href="{% url 'website:colposcopy' %}">Kolposkopi</a>
+                        </div>
+                    </details>
+                    <details class="nav-topic-group">
+                        <summary>Doğum Kontrolü</summary>
+                        <div class="nav-topic-links">
+                            <a href="{% url 'website:intrauterine_device' %}">Rahim İçi Araç (Spiral)</a>
+                            <a href="{% url 'website:nexplanon' %}">Nexplanon (Cilt Altı İmplantı)</a>
+                            <a href="{% url 'website:abortion' %}">Kürtaj</a>
+                        </div>
+                    </details>
+                    <details class="nav-topic-group">
+                        <summary>Histeroskopi</summary>
+                        <div class="nav-topic-links">
+                            <a href="{% url 'website:hysteroscopy' %}">Histeroskopi</a>
+                            <a href="{% url 'website:asherman_syndrome' %}">Rahimde Yapışıklık (Asherman Sendromu)</a>
+                            <a href="{% url 'website:uterine_septum' %}">Uterin Septum (Rahim Perdesi)</a>
+                        </div>
+                    </details>
+                    <details class="nav-topic-group">
+                        <summary>Miyom</summary>
+                        <div class="nav-topic-links">
+                            <a href="{% url 'website:fibroids' %}">Miyom</a>
+                            <a href="{% url 'website:laparoscopic_myomectomy' %}">Rahim Koruyucu Miyom Cerrahisi</a>
+                        </div>
+                    </details>
+                    <details class="nav-topic-group">
+                        <summary>Vajinal Agenezi</summary>
+                        <div class="nav-topic-links">
+                            <a href="{% url 'website:vaginal_agenesis' %}">Vajinal Agenezi</a>
+                            <a href="{% url 'website:laparoscopic_neovagina' %}">Laparoskopik Neovajina Cerrahisi</a>
+                        </div>
+                    </details>
+                    <a href="{% url 'website:endometriosis' %}">Endometriozis (Çikolata Kisti)</a>
+                    <a href="{% url 'website:ectopic_pregnancy' %}">Dış Gebelik: Tanı ve Tedavi</a>
+                    <a href="{% url 'website:ovarian_cysts' %}">Yumurtalık Kistleri</a>
+                    <a href="{% url 'website:laparoscopic_hysterectomy' %}">Laparoskopik Histerektomi</a>
+                    <a href="{% url 'website:advanced_laparoscopic_surgery' %}">İleri Laparoskopik Cerrahi</a>
                 </div>
             </div>
 
@@ -332,6 +300,9 @@
 
                     <a href="{% url 'website:high_risk_pregnancy' %}">
                         Riskli Gebelik Takibi
+                    </a>
+                    <a href="{% url 'website:amniocentesis' %}">
+                        Amniyosentez
                     </a>
 
                 </div>

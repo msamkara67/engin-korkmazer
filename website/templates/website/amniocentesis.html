@@ -1,0 +1,59 @@
+{% extends "website/base.html" %}
+
+{% block title %}Amniyosentez | Doç. Dr. Engin Korkmazer Bursa{% endblock %}
+{% block meta_description %}Amniyosentezin hangi durumlarda yapıldığı, uygulanışı, riskleri ve araştırılan genetik hastalıklar hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · YÜKSEK RİSKLİ GEBELİK</span>
+        <h1>Amniyosentez</h1>
+        <p>Amniyosentez işlemi, tanısal incelemeler ve işlem öncesinde bilinmesi gerekenler.</p>
+    </div>
+</section>
+<section class="article-page">
+    <div class="container article-layout">
+        <article class="article-content">
+            <p><strong>Amniyosentez</strong>, gebelik sırasında bebeğin içinde bulunduğu amniyon sıvısından ince bir iğne yardımıyla örnek alınması işlemidir. Bu sıvının içinde bebeğe ait hücreler bulunur. Alınan örnek laboratuvarda incelenerek bebeğin bazı genetik ve kromozomal hastalıkları taşıyıp taşımadığı araştırılabilir.</p>
+
+            <h2>Amniyosentez hangi durumlarda yapılır?</h2>
+            <p>Amniyosentez her gebeye rutin olarak yapılan bir işlem değildir. Genellikle aşağıdaki durumlarda önerilebilir:</p>
+            <ul>
+                <li>İkili test, üçlü test veya NIPT gibi tarama testlerinde kromozomal hastalık açısından yüksek risk saptanması.</li>
+                <li>Ultrason incelemesinde bebeğe ait bazı gelişim farklılıklarının görülmesi.</li>
+                <li>Ailede bilinen kalıtsal bir hastalık bulunması ve bebeğin bu hastalık açısından değerlendirilmesinin gerekmesi.</li>
+                <li>Önceki gebelikte kromozomal veya genetik bir hastalık saptanmış olması.</li>
+                <li>Doktorun, gebeliğe özgü bulgular nedeniyle kesin tanıya yönelik genetik inceleme önermesi.</li>
+            </ul>
+
+            <h2>Amniyosentez nasıl yapılır?</h2>
+            <p>İşlem öncesinde ultrasonla bebeğin, plasentanın ve amniyon sıvısının yeri belirlenir. Ardından karın cildi uygun şekilde temizlenir ve ultrason eşliğinde ince bir iğne ile anne karnından girilerek az miktarda amniyon sıvısı alınır.</p>
+            <p>İşlem genellikle birkaç dakika sürer. Çoğunlukla anestezi gerektirmez. İğne, bebeğe zarar vermemek için ultrason eşliğinde dikkatle ilerletilir.</p>
+            <p>Alınan sıvı laboratuvara gönderilir. Yapılacak incelemeye göre sonuçlar birkaç gün içinde veya birkaç hafta içerisinde çıkabilir.</p>
+
+            <h2>Amniyosentez bebeğe zarar verir mi?</h2>
+            <p>Amniyosentez deneyimli kişiler tarafından, uygun koşullarda ve ultrason eşliğinde yapıldığında genel olarak güvenli bir işlemdir. Bununla birlikte tamamen risksiz değildir.</p>
+            <p>En önemli risk, gebeliğin kaybedilmesidir. İşleme bağlı düşük riski binde 1 kadardır. Ayrıca nadiren su gelmesi, enfeksiyon veya kanama görülebilir.</p>
+            <p>İşlem sonrasında hafif, kısa süreli kramp hissedilebilir. Şiddetli karın ağrısı, ateş, vajinal kanama veya vajinadan sıvı gelmesi durumunda vakit kaybetmeden sağlık kuruluşuna başvurulmalıdır.</p>
+
+            <h2>Amniyosentez hangi hastalıkları gösterir?</h2>
+            <p>Amniyosentez, incelenen örnekteki genetik materyalin değerlendirilmesini sağlar. Yapılan teste bağlı olarak Down sendromu, Edwards sendromu, Patau sendromu ve belirli genetik hastalıklar araştırılabilir.</p>
+            <p>Ancak <strong>amniyosentez bütün hastalıkları göstermez.</strong> Amniyosentez ile genetik hastalıklara bakılabilirken, gelişimsel bozukluklar amniyosentez ile değerlendirilemez. Hangi hastalıkların saptanabileceği, istenen laboratuvar testlerine bağlıdır. Normal sonuç alınması, bebeğin tüm hastalıklardan tamamen uzak olduğu anlamına gelmez.</p>
+
+            <h2>Amniyosentez yaptırmak zorunlu mudur?</h2>
+            <p>Hayır. Amniyosentez, anne adayının bilgilendirilmesi ve onamı ile yapılan bir tanı işlemidir. Tarama testleri risk hakkında bilgi verirken amniyosentez, araştırılan hastalıklar açısından daha kesin tanı sağlayabilir.</p>
+            <p>İşlem öncesinde beklenen yararlar, olası riskler, alternatifler ve sonuçların gebelik yönetimini nasıl etkileyebileceği doktorla birlikte değerlendirilmelidir.</p>
+        </article>
+        <aside class="article-sidebar">
+            <div class="article-side-card">
+                <span class="contact-label">RANDEVU</span>
+                <h3>Değerlendirme için randevu</h3>
+                <p>Kişisel değerlendirme için randevu oluşturabilirsiniz.</p>
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Randevu Al</a>
+                {% include "website/appointment_address.html" %}
+            </div>
+            <a href="{% url 'website:patient_info' %}" class="article-back-link">← Tüm Bilgilendirme Yazıları</a>
+        </aside>
+    </div>
+</section>
+{% endblock %}
