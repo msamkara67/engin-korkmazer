@@ -1,0 +1,65 @@
+{% extends "website/base.html" %}
+
+{% block title %}CVS (Plasenta Biyopsisi) | Doç. Dr. Engin Korkmazer Bursa{% endblock %}
+{% block meta_description %}CVS (koryonik villus örneklemesi) işlemi, uygulanma zamanı, genetik incelemeler, riskler ve amniyosentez ile farkları hakkında bilgilendirme.{% endblock %}
+
+{% block content %}
+<section class="article-hero">
+    <div class="container">
+        <span class="section-kicker">HASTA BİLGİLENDİRME · YÜKSEK RİSKLİ GEBELİK</span>
+        <h1>CVS (Plasenta Biyopsisi - Koryonik Villus Örneklemesi) Nedir?</h1>
+        <p>Gebeliğin erken döneminde genetik inceleme amacıyla yapılan plasenta biyopsisi.</p>
+    </div>
+</section>
+<section class="article-page">
+    <div class="container article-layout">
+        <article class="article-content">
+            <p><strong>CVS, bebeğin genetik yapısı hakkında bilgi edinmek amacıyla gebeliğin erken döneminde yapılan bir testtir.</strong> Bu işlemde, bebeğin eşinden (plasentadan) çok küçük bir doku örneği alınarak genetik inceleme yapılır.</p>
+
+            <h2>CVS neden yapılır?</h2>
+            <p>CVS, bebekte bazı kromozom veya genetik hastalıkların bulunup bulunmadığını araştırmak için uygulanır. Özellikle;</p>
+            <ul>
+                <li>Down sendromu gibi kromozom bozukluklarının araştırılmasında,</li>
+                <li>Trizomi 18 ve trizomi 13 gibi diğer kromozom hastalıklarının değerlendirilmesinde,</li>
+                <li>Ailede bilinen kalıtsal bir hastalık varsa bu hastalığın bebekte bulunup bulunmadığının incelenmesinde kullanılabilir.</li>
+            </ul>
+            <p>CVS her gebeye yapılması gereken rutin bir test değildir. Genellikle tarama testlerinde risk saptandığında veya aile öyküsü nedeniyle genetik inceleme gerektiğinde önerilir.</p>
+
+            <h2>CVS ne zaman yapılır?</h2>
+            <p>CVS genellikle gebeliğin <strong>11–14. haftaları arasında</strong> yapılır. Erken dönemde sonuç alınmasına olanak sağlaması, işlemin önemli avantajlarından biridir.</p>
+
+            <h2>İşlem nasıl yapılır?</h2>
+            <p>CVS, ultrason eşliğinde gerçekleştirilir. Lokal anestezi ile yapılan bir işlem olup belirgin ağrılı değildir. Plasentanın konumuna göre iki farklı yöntem kullanılabilir:</p>
+            <ul>
+                <li><strong>Karından:</strong> İnce bir iğne ile karın duvarından geçilerek plasentadan örnek alınır.</li>
+                <li><strong>Rahim ağzından:</strong> İnce bir kateter kullanılarak rahim ağzından plasentaya ulaşılır ve örnek alınır.</li>
+            </ul>
+            <p>Hangi yöntemin kullanılacağı gebeliğin durumuna ve plasentanın konumuna göre doktor tarafından belirlenir. İşlem genellikle kısa sürer ve çoğu zaman hastanede yatış gerektirmez.</p>
+
+            <h2>CVS bebeğe zarar verir mi?</h2>
+            <p>Genel olarak güvenli kabul edilen bir işlemdir. Bununla birlikte, düşük riski tamamen sıfır değildir.</p>
+            <p>İşleme bağlı düşük riski güncel uygulamalarda genellikle yaklaşık %0,2–0,5 düzeyindedir.</p>
+            <p>İşlem sonrasında hafif kramp veya lekelenme görülebilir. Şiddetli ağrı, yoğun kanama, ateş veya su gelmesi durumunda vakit kaybetmeden sağlık kuruluşuna başvurulmalıdır.</p>
+
+            <h2>CVS sonucunda hangi bilgiler elde edilir?</h2>
+            <p>Alınan doku laboratuvarda incelenir. Yapılan incelemenin türüne bağlı olarak bazı kromozom bozuklukları veya belirli genetik hastalıklar hakkında kesin tanıya ulaşılabilir.</p>
+            <p>Sonuçların çıkması, yapılan teste göre birkaç gün ile birkaç hafta arasında değişebilir.</p>
+            <p>CVS bütün doğumsal hastalıkları göstermez. Örneğin, bebeğin omurga gelişimiyle ilgili bazı sorunları değerlendirmek için ayrıca ultrason ve gerektiğinde başka testler yapılması gerekir.</p>
+
+            <h2>CVS ile amniyosentez arasındaki fark nedir?</h2>
+            <p>CVS genellikle gebeliğin 11–14. haftalarında plasentadan örnek alınarak yapılır. Amniyosentez ise çoğunlukla 15. gebelik haftasından sonra, bebeğin içinde bulunduğu amniyon sıvısından örnek alınmasıyla gerçekleştirilir.</p>
+            <p>Her iki yöntem de genetik inceleme amacıyla kullanılabilir. Hangi testin uygun olduğu, gebelik haftasına, araştırılan hastalığa ve doktorun değerlendirmesine göre belirlenir.</p>
+        </article>
+        <aside class="article-sidebar">
+            <div class="article-side-card">
+                <span class="contact-label">RANDEVU</span>
+                <h3>Değerlendirme için randevu</h3>
+                <p>Kişisel değerlendirme için randevu oluşturabilirsiniz.</p>
+                <a href="https://www.doktortakvimi.com/profil/engin-korkmazer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Randevu Al</a>
+                {% include "website/appointment_address.html" %}
+            </div>
+            <a href="{% url 'website:patient_info' %}" class="article-back-link">← Tüm Bilgilendirme Yazıları</a>
+        </aside>
+    </div>
+</section>
+{% endblock %}

@@ -57,6 +57,9 @@ def high_risk_pregnancy(request):
 def amniocentesis(request):
     return render(request, "website/amniocentesis.html")
 
+def cvs(request):
+    return render(request, "website/cvs.html")
+
 def ovarian_cysts(request):
     return render(request, "website/ovarian_cysts.html")
 
