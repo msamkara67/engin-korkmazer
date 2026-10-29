@@ -60,6 +60,9 @@ def amniocentesis(request):
 def cvs(request):
     return render(request, "website/cvs.html")
 
+def cesarean_scar_pregnancy(request):
+    return render(request, "website/cesarean_scar_pregnancy.html")
+
 def ovarian_cysts(request):
     return render(request, "website/ovarian_cysts.html")
 

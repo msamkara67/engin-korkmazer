@@ -12,6 +12,7 @@ urlpatterns = [
     path("dis-gebelik/", views.ectopic_pregnancy, name="ectopic_pregnancy"),
     path("amniyosentez/", views.amniocentesis, name="amniocentesis"),
     path("cvs-plasenta-biyopsisi/", views.cvs, name="cvs"),
+    path("sezaryen-skar-gebeligi/", views.cesarean_scar_pregnancy, name="cesarean_scar_pregnancy"),
     path("asiri-aktif-mesane/", views.overactive_bladder, name="overactive_bladder"),
     path("genital-sigil/", views.genital_warts, name="genital_warts"),
     path("uterin-septum-rahim-perdesi/", views.uterine_septum, name="uterine_septum"),
