@@ -39,6 +39,9 @@ def abortion(request):
 def ectopic_pregnancy(request):
     return render(request, "website/ectopic_pregnancy.html")
 
+def isthmocele(request):
+    return render(request, "website/isthmocele.html")
+
 def nexplanon(request):
     return render(request, "website/nexplanon.html")
 

@@ -4542,3 +4542,10 @@ a {
     .nav-topic-group summary { padding: 9px 4px; font-size: 13px; }
     .nav-topic-links { margin-left: 8px; padding-left: 10px; }
 }
+.article-table-scroll { max-width: 100%; overflow-x: auto; margin: 20px 0; }
+.article-content:has(.article-table-scroll) { min-width: 0; }
+.article-comparison-table { width: 100%; min-width: 540px; border-collapse: collapse; font-size: 15px; line-height: 1.6; }
+.article-comparison-table th, .article-comparison-table td { padding: 14px; border: 1px solid #cfe2f1; text-align: left; vertical-align: top; }
+.article-comparison-table thead { background: #e7f2fa; color: #123f6d; }
+.article-comparison-table tbody th { background: #f6fbff; font-weight: 600; }
+.article-table-scroll:focus-visible { outline: 2px solid #176ec2; outline-offset: 2px; }
